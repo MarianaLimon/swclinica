@@ -1,0 +1,84 @@
+<center><h5>Registrar Nuevo Paciente</h5></center><br>
+<section>
+    <center>
+        <div id="registro" class="container row">
+            <form class="form-inline row container" role="form" action="reg.php" method="post">
+                <div class="form-group row container">
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" size="40" class="form-control"  placeholder="Nombre completo del paciente" >
+                    </div>
+                    <div class="form-group">
+                        <input  type="text" id="edad" name="numero" maxlength="3" size="2" class="form-control"  placeholder="Edad" onkeypress="return solonumeros(event)">
+                    </div>
+                    <div class="form-group">
+                        <select id="sexo" name="sexo" class="form-control c-select">
+                            <option selected>Sexo...</option>
+                            <option value="Masculino" >Maculino</option>
+                            <option value="Femenino" >Femenino</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="e_civil" name="e_civil" class="form-control c-select">
+                            <option selected>Estado civil</option>
+                            <option value="soltero"  >soltero</option>
+                            <option value="casado" >casado</option>
+                            <option value="viudo"  >viudo</option>
+                            <option value="divorciado">divorciado</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group container row">
+                    <div class="form-group"><br>
+                        <input type="text" id="direccion" name="adress" size="42"  placeholder="Dirección" class="form-control has-success">
+                    </div>
+                    <div class="form-group"><br>
+                        <input type="text" id="email" name="e_mail" size="30"  placeholder="Correo Electónico" class="form-control has-success">
+                    </div>
+                    <div class="form-group"><br>
+                        <input type="tel" id="tel" name="telefono" size="15"  placeholder="Núm. Telefónico" class="form-control has-success"
+                               onkeypress="return solonumeros(event)" maxlength="10">
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row container">
+                    <br>
+                    <div class="form-group"></div>
+                    <div class="form-group">
+                        <input type="text" id="ocupacion" name="ocupacion" class="form-control has-success"  placeholder="Ocupación">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="motivoconsulta" name="mot_consult" size="32" placeholder="Motivo de Consulta" class="form-control has-success">
+                    </div>
+                    <div class="form-group">
+                        Fecha de Nacimiento
+                        <input type="date" id="brithday" name="date_control" class="form-control" placeholder="Fecha de Nacimiento"><br>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="container">
+                    <a data-toggle="collapse" data-target="#demo">
+                        ¿Alguien proporciono la informaci&oacute;n por el paciente?
+                    </a>
+                    <div id="demo" class="collapse">
+                        <div class="form-group row">
+                            <br>
+                            <label for="nombreinformacion">¿Quién proporciono la informaci&oacute;n?</label>
+                            <br><input type="text" id="nombreinformacion" name="name" size="50" class="form-control has-success" placeholder="Nombre">
+                            <input type="text" id="parentescoformacion" name="parentesco" size="10" class="form-control has-success" placeholder="Parentesco">
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div align="center">
+                    <br><br>
+                    <button href="consulta.html" id="guardar alta_guardar" class="btn btn-primary btn-lg"> Guardar y continuar </button>
+                </div>
+                <br>
+            </form>
+        </div><br>
+    </center>
+</section>

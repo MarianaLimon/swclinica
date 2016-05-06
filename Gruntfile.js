@@ -68,7 +68,7 @@ module.exports = function (grunt) {
                 options: {
                     nospawn: true,
                     livereload: '<%= connect.options.livereload %>'
-                },
+                }
             },
             js: {
                 files: ['<%= inspinia.app %>/scripts/{,*/}*.js'],
@@ -140,7 +140,7 @@ module.exports = function (grunt) {
                         cwd: 'bower_components/bootstrap',
                         src: ['fonts/*.*'],
                         dest: '<%= inspinia.dist %>'
-                    },
+                    }
                 ]
             },
             styles: {

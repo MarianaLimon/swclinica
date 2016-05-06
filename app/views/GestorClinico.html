@@ -19,3 +19,518 @@
 </section>
 
 
+<center><h5>Registrar Nuevo Paciente</h5></center><br>
+<section>
+    <center>
+        <div id="registro" class="container row">
+            <form class="form-inline row container" role="form" action="reg.php" method="post">
+                <div class="form-group row container">
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" size="40" class="form-control"  placeholder="Nombre completo del paciente" >
+                    </div>
+                    <div class="form-group">
+                        <input  type="text" id="edad" name="numero" maxlength="3" size="2" class="form-control"  placeholder="Edad" onkeypress="return solonumeros(event)">
+                    </div>
+                    <div class="form-group">
+                        <select id="sexo" name="sexo" class="form-control c-select">
+                            <option selected>Sexo...</option>
+                            <option value="Masculino" >Maculino</option>
+                            <option value="Femenino" >Femenino</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="e_civil" name="e_civil" class="form-control c-select">
+                            <option selected>Estado civil</option>
+                            <option value="soltero"  >soltero</option>
+                            <option value="casado" >casado</option>
+                            <option value="viudo"  >viudo</option>
+                            <option value="divorciado">divorciado</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group container row">
+                    <div class="form-group"><br>
+                        <input type="text" id="direccion" name="adress" size="42"  placeholder="Dirección" class="form-control has-success">
+                     </div>
+                    <div class="form-group"><br>
+                        <input type="text" id="email" name="e_mail" size="30"  placeholder="Correo Electónico" class="form-control has-success">
+                    </div>
+                    <div class="form-group"><br>
+                        <input type="tel" id="tel" name="telefono" size="15"  placeholder="Núm. Telefónico" class="form-control has-success"
+                               onkeypress="return solonumeros(event)" maxlength="10">
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row container">
+                    <br>
+                    <div class="form-group"></div>
+                    <div class="form-group">
+                            <input type="text" id="ocupacion" name="ocupacion" class="form-control has-success"  placeholder="Ocupación">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="motivoconsulta" name="mot_consult" size="32" placeholder="Motivo de Consulta" class="form-control has-success">
+                    </div>
+                    <div class="form-group">
+                        Fecha de Nacimiento
+                        <input type="date" id="brithday" name="date_control" class="form-control" placeholder="Fecha de Nacimiento"><br>
+                    </div>
+                </div>
+                  <br>
+                <br>
+
+                <div class="container">
+                    <a data-toggle="collapse" data-target="#demo">
+                        ¿Alguien proporciono la informaci&oacute;n por el paciente?
+                    </a>
+                    <div id="demo" class="collapse">
+                        <div class="form-group row">
+                            <br>
+                            <label for="nombreinformacion">¿Quién proporciono la informaci&oacute;n?</label>
+                            <br><input type="text" id="nombreinformacion" name="name" size="50" class="form-control has-success" placeholder="Nombre">
+                            <input type="text" id="parentescoformacion" name="parentesco" size="10" class="form-control has-success" placeholder="Parentesco">
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div align="center">
+                    <br><br>
+                    <button href="consulta.html" id="guardar alta_guardar" class="btn btn-primary btn-lg"> Guardar y continuar </button>
+                </div>
+                <br>
+            </form>
+        </div><br>
+    </center>
+</section>
+
+<br><br>
+
+<section>
+    <center><h5>Historial Cínico</h5></center><br></center><br>
+    <div class="container">
+
+        <form name="ejemplo1" method="POST">
+            ¿Se encuentra bajo algun tratamiento medico actualmente?<select name="seleccion" onChange="habilitar(this.form)">
+            <option value="No">No</option>
+            <option value="Si">Si</option>
+
+        </select>
+            ¿Relacionado a que?
+            <input name="porque" disabled>
+        </form>
+        <form>
+            ¿Padece actualmente alguna enfermedad?<select name="seleccion" onChange="habilitar(this.form)">
+            <option value="No">No</option>
+            <option value="Si">Si</option>
+
+        </select>
+            ¿Cual?
+            <input name="porque" disabled>
+        </form>
+
+        <label for="intervencion_quirurgica">¿Ha tenido alguna intervencio quirurgica en el ultimo año?</label>
+        <select id="intervencion_quirurgica">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+        <form>
+            ¿Toma algun medicamento o droga como antibiotico sulfas ticoagulante, insulina, tranquilizante o analgesicos?
+            <select name="seleccion" onChange="habilitar(this.form)">
+            <option value="No">No</option>
+            <option value="Si">Si</option>
+        </select>
+            ¿Cual?
+            <input name="porque" disabled>
+        </form>
+
+        <form>
+            ¿Ha tenido alguna intervencio quirurgica en el ultimo año?
+            <select name="seleccion" onChange="habilitar(this.form)">
+                <option value="Si" >Si</option>
+                <option value="No">No</option>
+            </select>
+        </form>
+        <form>
+
+            ¿Toma algun medicamento o droga como antibiotico sulfas ticoagulante, insulina, tranquilizante o analgesicos?<select name="seleccion" onChange="habilitar(this.form)">
+            <option value="No">No</option>
+            <option value="Si">Si</option>
+
+        </select>
+            ¿Cual?
+            <input name="porque" disabled>
+        </form>
+
+        <form>
+            ¿Ha recibido trasfucion sanguineas?
+            <select name="seleccion" onChange="habilitar(this.form)">
+                <option value="Si" >Si</option>
+                <option value="No">No</option>
+            </select>
+        </form>
+
+        <form>
+
+            ¿Presenta algun tipo de alergia?<select name="seleccion" onChange="habilitar(this.form)">
+            <option value="No">No</option>
+            <option value="Si">Si</option>
+
+        </select>
+            ¿A que?
+            <input name="porque" disabled>
+        </form>
+
+        <form>
+            ¿Se ha desmayado alguna vez?
+            <select name="seleccion" onChange="habilitar(this.form)">
+                <option value="Si" >Si</option>
+                <option value="No">No</option>
+            </select>
+        </form>
+
+
+        <form>
+            ¿Tiene sensacion de sed o hambre con mucha frecuencia?
+            <select name="seleccion" onChange="habilitar(this.form)">
+                <option value="Si" >Si</option>
+                <option value="No">No</option>
+            </select>
+        </form>
+        <form>
+            ¿Le ha faltado la respiracion cuando se esfuerza?
+            <select name="seleccion" onChange="habilitar(this.form)">
+                <option value="Si" >Si</option>
+                <option value="No">No</option>
+            </select>
+        </form>
+        <form>
+            ¿Esta usted embarazada?
+            <select name="seleccion" onChange="habilitar(this.form)">
+                <option value="Si" >Si</option>
+                <option value="No">No</option>
+            </select>
+        </form>
+        <form>
+            ¿Cuantos meses tiene?
+            <select name="seleccion" onChange="habilitar(this.form)">
+                <option value="Si" >Si</option>
+                <option value="No">No</option>
+            </select>
+        </form>
+
+        <center><h1>Antecedentes familiares hereditarios</h1></center>
+
+        <label for="ante_madre">Madre</label>
+        <input type="text" id="ante_madre" name="nombre" size="80"><br>
+
+        <label for="ante_padre">Padre</label>
+        <input type="text" id="ante_padre" name="nombre" size="80"><br>
+
+        <label for="ante_herma">Hermanos</label>
+        <input type="text" id="ante_herma" name="nombre" size="76"><br>
+
+        <label for="hijos">Hijos</label>
+        <input type="text" id="hijos" name="nombre" size="80"><br>
+
+        <center><h1>Antecedentes personales patalogicos</h1></center>
+
+        <label for="alt_sangui">ALT sanguineas</label>
+        <select id="alt_sangui">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+
+        <label for="anemia">Anemia</label>
+        <select id="anemia">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="artritis">Artritis</label>
+        <select id="artritis">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+
+        <label for="Asma">Asma</label>
+        <select id="Asma">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+
+        <label for="cancer">Cancer</label>
+        <select id="cancer">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="depreciones">Depreciones</label>
+        <select id="depreciones">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+
+        <br>
+
+
+
+        <label for="epilepcias">Epilepcias</label>
+        <select id="epilepcias">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+
+        <label for="diabetes">Diabetes</label>
+        <select id="diabetes">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+
+
+
+        <label for="gastritis">Gastritis</label>
+        <select id="gastritis">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+
+        <label for="hepatitis">Hepatitis</label>
+        <select id="hepatitis">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="hipotencion">Hipotencion</label>
+        <select id="hipotencion">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+        <br>
+
+
+        <label for="traumatismo">Traumatismo</label>
+        <select id="traumatismo">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+
+        <label for="tuberculosis">Tuberculosis</label>
+        <select id="tuberculosis">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="fiebre_reuma">Fiebre reumatica</label>
+        <select id="fiebre_reuma">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+
+        <label for="ETS">ETS</label>
+        <select id="ETS">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+
+        <label for="varisela">Varisela</label>
+        <select id="varisela">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="rubiola">Rubiola</label>
+        <select id="rubiola">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+        <br>
+
+        <label for="sarampion">Sarampion</label>
+        <select id="sarampion">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+
+        <label for="parotiditis">Parotiditis</label>
+        <select id="parotiditis">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="escarlatina">Escarlatina</label>
+        <select id="escarlatina">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+
+        <label for="enfer_endo">Enfermedad endocrina</label>
+        <select id="enfer_endo">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+
+        <label for="enfer_cardio">Enfermedad cardiobascular</label>
+        <select id="enfer_cardio">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+
+        <form>
+
+            Otro<select name="seleccion" onChange="habilitar(this.form)">
+            <option value="No">No</option>
+            <option value="Si">Si</option>
+
+        </select>
+            ¿Cual?
+            <input name="porque" disabled>
+        </form>
+
+
+        <form>
+
+            Es alergico al apecilina, sulfas u otras sustancias<select name="seleccion" onChange="habilitar(this.form)">
+            <option value="No">No</option>
+            <option value="Si">Si</option>
+
+        </select>
+            ¿Cual?
+            <input name="porque" disabled>
+        </form>
+
+
+        <center><h1>Registro clinico odontologico</h1></center>
+
+
+        <label for="enfer_perio">Enfermedad periodontal</label>
+        <select id="enfer_perio">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+        <br>
+
+
+
+
+        <label for="infeccion_cavidad">¿Presenta algun infeccion en cavidad oral?</label>
+        <select id="infeccion_cavidad">
+            <option value="Si" >Si</option>
+            <option value="No">No</option>
+        </select>
+        <br>
+
+
+        <form>
+
+            Hambitos<select name="seleccion" onChange="habilitar(this.form)">
+            <option value="No">No</option>
+            <option value="Si">Si</option>
+
+        </select>
+            ¿A que?
+            <input name="porque" disabled>
+        </form>
+
+
+        <?php
+		function load_country()
+		{
+			$connect = mysqli_connect("192.168.56.1:3306", "root", "clinicags", "tbl_countr");
+			$output = '';
+			$sql = "SELECT * FROM tbl_country ORDER BY country_name";
+			$result = mysqli_query($connect, $sql);
+			while($row = mysqli_fetch_array($result))
+			{
+				$output .= '<option value="'.$row["country_id"].'">'.$row["country_name"].'</option>';
+        }
+        return $output;
+        }
+        ?>
+
+        <option value="">selecciona servicio</option>
+        <?php echo load_country(); ?>
+        </select></p>
+        <p>tratamiento
+            <select name="state_name" id="state_name">
+                <option value="">tratamiento</option>
+
+            </select></p>
+        <script>
+            $(document).ready(function(){
+                $('#country').change(function(){
+                    var country_id = $(this).val();
+                    $.ajax({
+                        url:"fetch_state.php",
+                        method:"POST",
+                        data:{countryId:country_id},
+                        dataType:"text",
+                        success:function(data)
+                        {
+                            $('#state').html(data);
+                        }
+                    });
+                });
+            });
+        </script>
+
+        <script languaje="javascript">
+            function habilitar(form)
+            {
+                if (form.seleccion[0].selected == true)
+                {
+                    form.porque2.disabled = true;
+                }
+                else
+                {
+                    form.porque.disabled = false;
+                }
+
+            }
+        </script>
+
+
+
+
+        <h1>Agendar cita nueva</h1>
+        Fecha: <input type="date" name="date_control" /><br>
+        <input type="time" name="control_date"/>
+
+        <div align="center">
+            <button value="histoclin_guardar">Guardar Siguiente</a>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!--para precios-->
+<form class="form-inline">
+    <div class="form-group">
+        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+        <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+            <div class="input-group-addon">.00</div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Transfer cash</button>
+</form>
+<!--Solo lectura-->
+<input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+

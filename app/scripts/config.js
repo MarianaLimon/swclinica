@@ -10,7 +10,7 @@ function config($stateProvider, $urlRouterProvider) {
         })
         .state('index.main', {
             url: "/main",
-            templateUrl: "../views/AltaPaciente.html",
+            templateUrl: "../views/NuevoPaciente.html",
             data: { pageTitle: 'Example view' }
         })
         .state('landing', {
