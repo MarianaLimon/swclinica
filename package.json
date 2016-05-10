@@ -1,6 +1,6 @@
 {
-  "name": "GS Gestor Clinico",
-  "version": "0.0.0",
+  "name": "swclinica",
+  "version": "1.0.0",
   "description": "Proyecto de residencias Profecionales",
   "dependencies": {
     "grunt": "^0.4.5"

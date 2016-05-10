@@ -18,11 +18,13 @@
     </center>
 </section>
 
+<br><br><br><br><br><br><br><br><br><br>
 
-<center><h5>Registrar Nuevo Paciente</h5></center><br>
-<section>
+
+<section id="NuevoPaciente">
+    <center><h5>Registrar Nuevo Paciente</h5></center><br>
     <center>
-        <div id="registro" class="container row">
+        <div id="registro" class="container">
             <form class="form-inline row container" role="form" action="reg.php" method="post">
                 <div class="form-group row container">
                     <div class="form-group">
@@ -104,349 +106,465 @@
     </center>
 </section>
 
-<br><br>
+<br><br><br><br><br><br><br><br><br>
 
-<section>
-    <center><h5>Historial Cínico</h5></center><br></center><br>
-    <div class="container">
 
-        <form name="ejemplo1" method="POST">
-            ¿Se encuentra bajo algun tratamiento medico actualmente?<select name="seleccion" onChange="habilitar(this.form)">
-            <option value="No">No</option>
-            <option value="Si">Si</option>
-
-        </select>
-            ¿Relacionado a que?
-            <input name="porque" disabled>
+<section id="HistorialMedico">
+    <center><h5>Historial Cínico</h5></center><br><br><br><br><br>
+    <div id="seccionB"  class="container">
+        <form class="form-inline row container" role="form" action=".php" method="POST">
+            <div class="form-group row container ">
+                <div>
+                    <h4 class="form-group col-md-6">¿Se encuentra bajo algun tratamiento médico actualmente?</h4>
+                    <select name="preg1_secb" class="form-control c-select col-md-3" onChange="opcionOnChange(this)">
+                        <option selected>--</option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <!--campo oculto-->
+                <div id="opcion1"  style="display:none;">
+                    <h4 class="form-inline col-md-2">¿Relacionado a qué?</h4>
+                    <input name="porque" class="form-control c-select col-md-2">
+                </div>
+            </div>
+            <br><br>
+            <div class="form-group row container ">
+                <div>
+                    <h4 class="form-group col-md-6">¿Padece actualmente alguna enfermedad?</h4>
+                    <select name="preg2_secb" class="form-control c-select col-md-3" onChange="opcion2OnChange(this)">
+                        <option selected>--</option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <!--campo oculto-->
+                <div id="opcion3"  style="display:none;">
+                    <h4 class="form-inline col-md-2">¿Cuál?</h4>
+                    <input name="porque" class="form-control c-select col-md-2">
+                </div>
+            </div>
+            <br><br>
+            <div class="form-group row container">
+                <h4 class="form-group col-md-6">¿Ha estado hospitalizado alguna vez?</h4>
+                <select name="preg3_secb" class="form-control c-select col-md-5">
+                    <option selected>--</option>
+                    <option value="Si" >Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <br><br>
+            <div class="form-group row container">
+                <h4 class="form-group col-md-6">¿Ha tenido alguna intervención quirúrgica en el último año?</h4>
+                <select name="preg4_secb" class="form-control c-select col-md-5">
+                    <option selected>--</option>
+                    <option value="Si" >Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <br><br>
+            <div class="form-group row container">
+                <h4 class="form-group col-md-6">¿Toma algún medicamento o droga como antibiótico sulfas ticoagulante,
+                    insulina, tranquilizante o analgésicos?</h4>
+                <select name="preg5_secb" class="form-control c-select col-md-3" onChange="opcion3OnChange(this)">
+                    <option selected>--</option>
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                </select>
+                <!--campo oculto-->
+                <div id="opcion5"  style="display:none;">
+                    <h4 class="form-inline col-md-2">¿Cuál?</h4>
+                    <input name="porque" class="form-control c-select col-md-2">
+                </div>
+            </div>
+            <br><br>
+            <div class="form-group row container">
+                <h4 class="form-group col-md-6">¿Ha recibido trasfusiones sanguíneas?</h4>
+                <select name="preg6_secb" class="form-control c-select col-md-5">
+                    <option selected>--</option>
+                    <option value="Si" >Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <br><br>
+            <div class="form-group row container">
+                <h4 class="form-group col-md-6">¿Presenta algún tipo de alergia?</h4>
+                <select name="preg7_secb" class="form-control c-select col-md-3" onChange="opcion4OnChange(this)">
+                    <option selected>--</option>
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                </select>
+                <!--campo oculto-->
+                <div id="opcion7"  style="display:none;">
+                    <h4 class="form-inline col-md-2">¿A qué?</h4>
+                    <input name="porque" class="form-control c-select col-md-2">
+                </div>
+            </div>
+            <br><br>
+            <div class="form-group row container">
+                <h4 class="form-group col-md-6">¿Se ha desmayado alguna vez?</h4>
+                <select name="preg8_secb" class="form-control c-select col-md-5">
+                    <option selected>--</option>
+                    <option value="Si" >Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <br><br>
+            <div class="form-group row container">
+                <h4 class="form-group col-md-6">¿Tiene sensación de sed o hambre con mucha frecuencia?</h4>
+                <select name="preg9_secb" class="form-control c-select col-md-5">
+                    <option selected>--</option>
+                    <option value="Si" >Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <br><br>
+            <div class="form-group row container">
+                <h4 class="form-group col-md-6">¿Le ha faltado la respiración cuando se esfuerza?</h4>
+                <select name="preg10_secb" class="form-control c-select col-md-5">
+                    <option selected>--</option>
+                    <option value="Si" >Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <br><br>
+            <div class="form-group row container">
+                <h4 class="form-group col-md-6">¿Está usted embarazada?</h4>
+                <select name="preg11_secb" class="form-control c-select col-md-3" onChange="opcion5OnChange(this)">
+                    <option selected>--</option>
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                </select>
+                <!--campo oculto-->
+                <div id="opcion9"  style="display:none;">
+                    <h4 class="form-inline col-md-2">¿Cuántos meses tiene?</h4>
+                    <input name="motivo" class="form-control c-select col-md-2">
+                </div>
+            </div>
         </form>
-        <form>
-            ¿Padece actualmente alguna enfermedad?<select name="seleccion" onChange="habilitar(this.form)">
-            <option value="No">No</option>
-            <option value="Si">Si</option>
+    </div>
 
-        </select>
-            ¿Cual?
-            <input name="porque" disabled>
+<br><br><br><br><br>
+
+    <div id="seccioncC"  class="container">
+
+        <center><h2>Antecedentes familiares hereditarios</h2>
+            <br><br><br>
+        <form class="form-inline row container" role="form" action=".php" method="POST">
+
+            <h4 class="form-inline col-md-3" for="ante_madre">Madre</h4>
+            <input type="text" id="ante_madre" name="nombre" size="80" class="form-control c-select">
+            <br><br>
+
+            <h4 class="form-inline col-md-3" for="ante_padre">Padre</h4>
+            <input type="text" id="ante_padre" name="nombre" size="80" class="form-control c-select">
+            <br><br>
+
+            <h4 class="form-inline col-md-3" for="ante_herma">Hermanos</h4>
+            <input type="text" id="ante_herma" name="nombre" size="80" class="form-control c-select">
+            <br><br>
+
+            <h4 class="form-inline col-md-3" for="hijos">Hijos</h4>
+            <input type="text" id="hijos" name="nombre" size="80" class="form-control c-select">
+
         </form>
+        </center>
 
-        <label for="intervencion_quirurgica">¿Ha tenido alguna intervencio quirurgica en el ultimo año?</label>
-        <select id="intervencion_quirurgica">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
+        <br><br><br><br><br>
+        <center><h2>Antecedentes personales patológicos</h2></center>
+        <br><br><br>
+        <form class="form-inline row container" role="form" action=".php" method="POST">
 
-        <form>
-            ¿Toma algun medicamento o droga como antibiotico sulfas ticoagulante, insulina, tranquilizante o analgesicos?
-            <select name="seleccion" onChange="habilitar(this.form)">
-            <option value="No">No</option>
-            <option value="Si">Si</option>
-        </select>
-            ¿Cual?
-            <input name="porque" disabled>
+            <div id="seccionC2"  class="container">
+
+                <div class="form-group row container">
+                    <h4 class="form-group col-md-1" ></h4>
+                    <h4 class="form-group col-md-2" >ALT sanguineas</h4>
+                    <select name="preg1_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2" ></h4>
+                    <h4 class="form-group col-md-1" >Anemia</h4>
+                    <select name="preg2_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2" ></h4>
+                    <h4 class="form-group col-md-1" >Artritis</h4>
+                    <select name="preg3_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="form-group row container">
+                    <h4 class="form-group col-md-1" ></h4>
+                    <h4 class="form-group col-md-2" >Depreciones</h4>
+                    <select name="preg4_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2" ></h4>
+                    <h4 class="form-group col-md-1" >Cancer</h4>
+                    <select name="preg5_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2" ></h4>
+                    <h4 class="form-group col-md-1" >Asma</h4>
+                    <select name="preg6_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="form-group row container">
+                    <h4 class="form-group col-md-1" ></h4>
+                    <h4 class="form-group col-md-2" >Epilepcia</h4>
+                    <select name="preg7_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2" ></h4>
+                    <h4 class="form-group col-md-1" >Diabetes</h4>
+                    <select name="preg8_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2" ></h4>
+                    <h4 class="form-group col-md-1" >Gastritis</h4>
+                    <select name="preg9_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="form-group row container">
+                    <h4 class="form-group col-md-1" ></h4>
+                    <h4 class="form-group col-md-2" >Hipotensión</h4>
+                    <select name="preg10_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2" ></h4>
+                    <h4 class="form-group col-md-1" >Hepatitis</h4>
+                    <select name="preg11_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2" ></h4>
+                    <h4 class="form-group col-md-1" >Traumatismos</h4>
+                    <select name="preg12_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="form-group row container">
+                    <h4 class="form-group col-md-1" ></h4>
+                    <h4 class="form-group col-md-2" >Fiebre reumática</h4>
+                    <select name="preg13_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2" ></h4>
+                    <h4 class="form-group col-md-1" >Tuberculosis</h4>
+                    <select name="preg14_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2" ></h4>
+                    <h4 class="form-group col-md-1" >ETS</h4>
+                    <select name="preg15_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="form-group row container">
+                    <h4 class="form-group col-md-1" ></h4>
+                    <h4 class="form-group col-md-2" >Sarampion</h4>
+                    <select name="preg16_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2" ></h4>
+                    <h4 class="form-group col-md-1" >Rubiola</h4>
+                    <select name="preg17_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2" ></h4>
+                    <h4 class="form-group col-md-1" >Varisela</h4>
+                    <select name="preg18_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="form-group row container">
+                    <h4 class="form-group col-md-1" ></h4>
+                    <h4 class="form-group col-md-2" >Enfermedad endocrina</h4>
+                    <select name="preg19_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2" ></h4>
+                    <h4 class="form-group col-md-1" >Escarlatina</h4>
+                    <select name="preg20_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <h4 class="form-group col-md-2"></h4>
+                    <h4 class="form-group col-md-1">Parotiditis</h4>
+                    <select name="preg21_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="form-group row container">
+                    <h4 class="form-group col-md-1"></h4>
+                    <h4 class="form-group col-md-2">Enfermedad cardiobascular</h4>
+                    <select name="preg22_secC2" class="form-control c-select col-md-1">
+                        <option selected>--</option>
+                        <option value="Si" >Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <br> <br> <br><br>
+                <div class="form-group row container ">
+                    <div>
+                        <h4 class="form-group col-md-1"></h4>
+                        <h4 class="form-group col-md-4">¿Es alergico al apecilina, sulfas u otras sustancias?</h4>
+                        <select name="preg23_seC2" class="form-control c-select col-md-3" onChange="opcion6OnChange(this)">
+                            <option selected>--</option>
+                            <option value="si">Si</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <!--campo oculto-->
+                    <div id="opcion11"  style="display:none;">
+                        <h4 class="form-inline col-md-1"></h4>
+                        <h4 class="form-inline col-md-1">¿Cuál?</h4>
+                        <input name="porque" class="form-control c-select col-md-2">
+                    </div>
+                </div>
+                <br><br>
+            </div>
         </form>
+    </div>
 
-        <form>
-            ¿Ha tenido alguna intervencio quirurgica en el ultimo año?
-            <select name="seleccion" onChange="habilitar(this.form)">
-                <option value="Si" >Si</option>
-                <option value="No">No</option>
-            </select>
+    <br><br><br><br><br>
+
+    <div id="seccioncD"  class="container">
+
+        <center><h2>Registro clínico odontológico</h2></center>
+        <br><br><br>
+
+        <form class="form-inline row container" role="form" action=".php" method="POST">
+            <div class="form-group row container ">
+                <div>
+                    <h4 class="form-group col-md-1"></h4>
+                    <h4 class="form-group col-md-5">Enfermedad periodontal</h4>
+                    <select name="preg24_secC2" class="form-control c-select col-md-3">
+                        <option selected>--</option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row container ">
+                <div>
+                    <h4 class="form-group col-md-1"></h4>
+                    <h4 class="form-group col-md-5">¿Presenta algun infeccion en cavidad oral?</h4>
+                    <select name="preg24_secC2" class="form-control c-select col-md-3">
+                        <option selected>--</option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row container ">
+                <div>
+                    <h4 class="form-group col-md-1"></h4>
+                    <h4 class="form-group col-md-5">Hábitos</h4>
+                    <select name="preg24_secC2" class="form-control c-select col-md-2" onChange="opcion7OnChange(this)">
+                        <option selected>--</option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <!--campo oculto-->
+                <div id="opcion13"  style="display:none;">
+                    <h4 class="form-inline col-md-1"></h4>
+                    <h4 class="form-inline col-md-1">¿Cuáles?</h4>
+                    <input name="porque" class="form-control c-select col-md-2">
+                </div>
+            </div>
         </form>
-        <form>
-
-            ¿Toma algun medicamento o droga como antibiotico sulfas ticoagulante, insulina, tranquilizante o analgesicos?<select name="seleccion" onChange="habilitar(this.form)">
-            <option value="No">No</option>
-            <option value="Si">Si</option>
-
-        </select>
-            ¿Cual?
-            <input name="porque" disabled>
+        <br><br>
+        <h3>Estado general de los tejidos</h3>
+        <br><br>
+        <form class="form form-inline row container" role="form" action=".php" method="POST">
+            <div class="form-group container">
+                <label class="form-inline container-fluid">Labios</label>
+                <input type="text" name="labios" size="60" class="form-control c-select">
+                <label class="form-inline container-fluid">Paladar duro</label>
+                <input type="text" name="paladard" size="51" class="form-control c-select">
+                <br><br>
+            </div>
+            <div class="form form-group container">
+                <label class="form-inline container-fluid">Lengua</label>
+                <input type="text"  name="lengua" size="60" class="form-control c-select">
+                <label class="form-inline container-fluid">Carrillos</label>
+                <input type="text" name="carrillos" size="54" class="form-control c-select">
+                <br><br>
+            </div>
+            <div class="form form-group container">
+                <label class="form-inline container-fluid">Comisuras labiales</label>
+                <input type="text"  name="comisuras" size="50" class="form-control c-select">
+                <label class="form-inline container-fluid">Piso de boca</label>
+                <input type="text" name="piso" size="50" class="form-control c-select">
+                <br><br>
+            </div>
+            <div class="form form-group container">
+                <label class="form-inline container-fluid">Paladar blando</label>
+                <input type="text"  name="paladarb" size="47" class="form-control c-select">
+                <label class="form-inline container-fluid">Glándulas salivales</label>
+                <input type="text" name="glandulas" size="50" class="form-control c-select">
+                <br><br>
+            </div>
+            <div class="form form-group container">
+                <label class="form-inline container-fluid">Hallazgos rediográficos</label>
+                <input type="text"  name="hallazzgos" size="119" class="form-control c-select">
+                <br><br>
+            </div>
         </form>
-
-        <form>
-            ¿Ha recibido trasfucion sanguineas?
-            <select name="seleccion" onChange="habilitar(this.form)">
-                <option value="Si" >Si</option>
-                <option value="No">No</option>
-            </select>
-        </form>
-
-        <form>
-
-            ¿Presenta algun tipo de alergia?<select name="seleccion" onChange="habilitar(this.form)">
-            <option value="No">No</option>
-            <option value="Si">Si</option>
-
-        </select>
-            ¿A que?
-            <input name="porque" disabled>
-        </form>
-
-        <form>
-            ¿Se ha desmayado alguna vez?
-            <select name="seleccion" onChange="habilitar(this.form)">
-                <option value="Si" >Si</option>
-                <option value="No">No</option>
-            </select>
-        </form>
-
-
-        <form>
-            ¿Tiene sensacion de sed o hambre con mucha frecuencia?
-            <select name="seleccion" onChange="habilitar(this.form)">
-                <option value="Si" >Si</option>
-                <option value="No">No</option>
-            </select>
-        </form>
-        <form>
-            ¿Le ha faltado la respiracion cuando se esfuerza?
-            <select name="seleccion" onChange="habilitar(this.form)">
-                <option value="Si" >Si</option>
-                <option value="No">No</option>
-            </select>
-        </form>
-        <form>
-            ¿Esta usted embarazada?
-            <select name="seleccion" onChange="habilitar(this.form)">
-                <option value="Si" >Si</option>
-                <option value="No">No</option>
-            </select>
-        </form>
-        <form>
-            ¿Cuantos meses tiene?
-            <select name="seleccion" onChange="habilitar(this.form)">
-                <option value="Si" >Si</option>
-                <option value="No">No</option>
-            </select>
-        </form>
-
-        <center><h1>Antecedentes familiares hereditarios</h1></center>
-
-        <label for="ante_madre">Madre</label>
-        <input type="text" id="ante_madre" name="nombre" size="80"><br>
-
-        <label for="ante_padre">Padre</label>
-        <input type="text" id="ante_padre" name="nombre" size="80"><br>
-
-        <label for="ante_herma">Hermanos</label>
-        <input type="text" id="ante_herma" name="nombre" size="76"><br>
-
-        <label for="hijos">Hijos</label>
-        <input type="text" id="hijos" name="nombre" size="80"><br>
-
-        <center><h1>Antecedentes personales patalogicos</h1></center>
-
-        <label for="alt_sangui">ALT sanguineas</label>
-        <select id="alt_sangui">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-
-        <label for="anemia">Anemia</label>
-        <select id="anemia">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-        <label for="artritis">Artritis</label>
-        <select id="artritis">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-
-        <label for="Asma">Asma</label>
-        <select id="Asma">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-
-        <label for="cancer">Cancer</label>
-        <select id="cancer">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-        <label for="depreciones">Depreciones</label>
-        <select id="depreciones">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-
-        <br>
-
-
-
-        <label for="epilepcias">Epilepcias</label>
-        <select id="epilepcias">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-
-        <label for="diabetes">Diabetes</label>
-        <select id="diabetes">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-
-
-
-        <label for="gastritis">Gastritis</label>
-        <select id="gastritis">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-
-        <label for="hepatitis">Hepatitis</label>
-        <select id="hepatitis">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-        <label for="hipotencion">Hipotencion</label>
-        <select id="hipotencion">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-        <br>
-
-
-        <label for="traumatismo">Traumatismo</label>
-        <select id="traumatismo">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-
-        <label for="tuberculosis">Tuberculosis</label>
-        <select id="tuberculosis">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-        <label for="fiebre_reuma">Fiebre reumatica</label>
-        <select id="fiebre_reuma">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-
-        <label for="ETS">ETS</label>
-        <select id="ETS">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-
-        <label for="varisela">Varisela</label>
-        <select id="varisela">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-        <label for="rubiola">Rubiola</label>
-        <select id="rubiola">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-        <br>
-
-        <label for="sarampion">Sarampion</label>
-        <select id="sarampion">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-
-        <label for="parotiditis">Parotiditis</label>
-        <select id="parotiditis">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-        <label for="escarlatina">Escarlatina</label>
-        <select id="escarlatina">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-
-        <label for="enfer_endo">Enfermedad endocrina</label>
-        <select id="enfer_endo">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-
-        <label for="enfer_cardio">Enfermedad cardiobascular</label>
-        <select id="enfer_cardio">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-
-        <form>
-
-            Otro<select name="seleccion" onChange="habilitar(this.form)">
-            <option value="No">No</option>
-            <option value="Si">Si</option>
-
-        </select>
-            ¿Cual?
-            <input name="porque" disabled>
-        </form>
-
-
-        <form>
-
-            Es alergico al apecilina, sulfas u otras sustancias<select name="seleccion" onChange="habilitar(this.form)">
-            <option value="No">No</option>
-            <option value="Si">Si</option>
-
-        </select>
-            ¿Cual?
-            <input name="porque" disabled>
-        </form>
-
-
-        <center><h1>Registro clinico odontologico</h1></center>
-
-
-        <label for="enfer_perio">Enfermedad periodontal</label>
-        <select id="enfer_perio">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-        <br>
-
-
-
-
-        <label for="infeccion_cavidad">¿Presenta algun infeccion en cavidad oral?</label>
-        <select id="infeccion_cavidad">
-            <option value="Si" >Si</option>
-            <option value="No">No</option>
-        </select>
-        <br>
-
-
-        <form>
-
-            Hambitos<select name="seleccion" onChange="habilitar(this.form)">
-            <option value="No">No</option>
-            <option value="Si">Si</option>
-
-        </select>
-            ¿A que?
-            <input name="porque" disabled>
-        </form>
+    </div>
 
 
         <?php
@@ -495,7 +613,7 @@
             {
                 if (form.seleccion[0].selected == true)
                 {
-                    form.porque2.disabled = true;
+                    form.porque2.disabled = false;
                 }
                 else
                 {
@@ -516,21 +634,5 @@
             <button value="histoclin_guardar">Guardar Siguiente</a>
             </button>
         </div>
-    </div>
+
 </section>
-
-<!--para precios-->
-<form class="form-inline">
-    <div class="form-group">
-        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-        <div class="input-group">
-            <div class="input-group-addon">$</div>
-            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-            <div class="input-group-addon">.00</div>
-        </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Transfer cash</button>
-</form>
-<!--Solo lectura-->
-<input class="form-control" type="text" placeholder="Readonly input here…" readonly>
-
