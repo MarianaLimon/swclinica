@@ -186,3 +186,14 @@ function opcion7OnChange(sel) {
         divT.style.display = "";
     }
 }
+
+function muestraOculta(id) {
+    var elemento = document.getElementById('contenidos_'+id);
+
+    if(elemento.style.display == "" || elemento.style.display == "block") {
+        elemento.style.display = "none";
+    }
+    else {
+        elemento.style.display = "block";
+    }
+}

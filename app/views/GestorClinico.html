@@ -18,17 +18,40 @@
     </center>
 </section>
 
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 
+<section>
+    <center>
+        <div class="container">
+            <div class="jumbotron" style="padding-bottom:0px;">
+                <img src="img/login/logo.png"  style="width:304px;height:85px;">
+                <br><br><br>
+                <h3>Bienvenido Doctor {{}}</h3>
+                <form class="form-signin" role="form" action=".php" name="login" method="post">
+                    <button type="button" class="btn btn-lg btn-primary btn-block">Nuevo Paciente</button>
+                    <button type="button" class="btn btn-lg btn-primary btn-block">Buscar Paciente</button>
+                    <button type="button" class="btn btn-lg btn-primary btn-block">Registrar Pagos</button>
+                    <button type="button" class="btn btn-lg btn-primary btn-block">Consultar Historial</button>
+                    <button type="button" class="btn btn-lg btn-primary btn-block">Agenda de Citas</button>
+                    <br>
+                    <button type="submit" class="btn-link">Cerrar Sesión</button>
+                    <br><br><br>
+                </form>
+            </div>
+        </div>
+    </center>
+</section>
+
+<br><br><br><br><br><br><br><br><br>
 
 <section id="NuevoPaciente">
-    <center><h5>Registrar Nuevo Paciente</h5></center><br>
+    <legend><center><h5>Registrar Nuevo Paciente</h5></center></legend><br>
     <center>
-        <div id="registro" class="container">
+        <div id="registro" class="container"><br><br>
             <form class="form-inline row container" role="form" action="reg.php" method="post">
                 <div class="form-group row container">
                     <div class="form-group">
-                        <input type="text" id="nombre" name="nombre" size="40" class="form-control"  placeholder="Nombre completo del paciente" >
+                        <input type="text" id="nombre" name="nombre" size="40" class="form-control" placeholder="Nombre completo del paciente" >
                     </div>
                     <div class="form-group">
                         <input  type="text" id="edad" name="numero" maxlength="3" size="2" class="form-control"  placeholder="Edad" onkeypress="return solonumeros(event)">
@@ -108,14 +131,27 @@
 
 <br><br><br><br><br><br><br><br><br>
 
+<section>
+    <label class="file">
+        <input type="file" id="file">
+        <span class="file-custom"></span>
+    </label>
+</section>
+
+
+
+<br><br><br><br><br><br><br><br><br>
+
 
 <section id="HistorialMedico">
-    <center><h5>Historial Cínico</h5></center><br><br><br><br><br>
+    <legend><center><h5>Historial Cínico</h5></center></legend>
+
+    <br><br><br><br><br>
     <div id="seccionB"  class="container">
         <form class="form-inline row container" role="form" action=".php" method="POST">
             <div class="form-group row container ">
                 <div>
-                    <h4 class="form-group col-md-6">¿Se encuentra bajo algun tratamiento médico actualmente?</h4>
+                    <h4 class="form-group col-md-6">¿Se encuentra bajo alún tratamiento médico actualmente?</h4>
                     <select name="preg1_secb" class="form-control c-select col-md-3" onChange="opcionOnChange(this)">
                         <option selected>--</option>
                         <option value="si">Si</option>
@@ -248,7 +284,8 @@
 
     <div id="seccioncC"  class="container">
 
-        <center><h2>Antecedentes familiares hereditarios</h2>
+        <legend><h2>Antecedentes familiares hereditarios</h2></legend>
+        <center>
             <br><br><br>
         <form class="form-inline row container" role="form" action=".php" method="POST">
 
@@ -271,10 +308,10 @@
         </center>
 
         <br><br><br><br><br>
-        <center><h2>Antecedentes personales patológicos</h2></center>
+
+        <legend><h2>Antecedentes personales patológicos</h2></legend>
         <br><br><br>
         <form class="form-inline row container" role="form" action=".php" method="POST">
-
             <div id="seccionC2"  class="container">
 
                 <div class="form-group row container">
@@ -481,10 +518,11 @@
 
     <div id="seccioncD"  class="container">
 
-        <center><h2>Registro clínico odontológico</h2></center>
+        <legend><h2>Registro clínico odontológico</h2></legend>
         <br><br><br>
 
         <form class="form-inline row container" role="form" action=".php" method="POST">
+
             <div class="form-group row container ">
                 <div>
                     <h4 class="form-group col-md-1"></h4>
@@ -499,7 +537,7 @@
             <div class="form-group row container ">
                 <div>
                     <h4 class="form-group col-md-1"></h4>
-                    <h4 class="form-group col-md-5">¿Presenta algun infeccion en cavidad oral?</h4>
+                    <h4 class="form-group col-md-5">¿Presenta alguna infección en cavidad oral?</h4>
                     <select name="preg24_secC2" class="form-control c-select col-md-3">
                         <option selected>--</option>
                         <option value="si">Si</option>
@@ -526,8 +564,8 @@
                 </div>
             </div>
         </form>
-        <br><br>
-        <h3>Estado general de los tejidos</h3>
+        <br><br><br>
+        <legend><h2>Estado general de los tejidos</h2></legend>
         <br><br>
         <form class="form form-inline row container" role="form" action=".php" method="POST">
             <div class="form-group container">
@@ -565,6 +603,156 @@
             </div>
         </form>
     </div>
+    <br><br><br>
+    <div id="dentadura">
+        <center>
+            <div class="content inline">
+                    <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_1" href="#" onclick="muestraOculta('1');">18
+                    <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_2" href="#" onclick="muestraOculta('2');">17
+                    <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_3" href="#" onclick="muestraOculta('3');">16
+                    <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_4" href="#" onclick="muestraOculta('4');">15
+                    <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_5" href="#" onclick="muestraOculta('5');">14
+                    <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_6" href="#" onclick="muestraOculta('6');">13
+                    <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_7" href="#" onclick="muestraOculta('7');">12
+                    <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_8" href="#" onclick="muestraOculta('8');">11_
+
+                    _21<input type=image src="img/landing/Diente.png" width="40" height="40"id="enlace_9" href="#" onclick="muestraOculta('9');">
+                    22<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_10" href="#" onclick="muestraOculta('10');">
+                    23<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_11" href="#" onclick="muestraOculta('11');">
+                    24<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_12" href="#" onclick="muestraOculta('12');">
+                    25<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_13" href="#" onclick="muestraOculta('13');">
+                    26<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_14" href="#" onclick="muestraOculta('14');">
+                    27<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_15" href="#" onclick="muestraOculta('15');">
+                    28<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_16" href="#" onclick="muestraOculta('16');">
+            </div>
+            <br>
+            <div class="content inline">
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_17" href="#" onclick="muestraOculta('17');">55
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_18" href="#" onclick="muestraOculta('18');">54
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_19" href="#" onclick="muestraOculta('19');">53
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_20" href="#" onclick="muestraOculta('20');">52
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_21" href="#" onclick="muestraOculta('21');">51_
+
+                _61<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_22" href="#" onclick="muestraOculta('22');">
+                62<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_23" href="#" onclick="muestraOculta('23');">
+                63<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_24" href="#" onclick="muestraOculta('24');">
+                64<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_25" href="#" onclick="muestraOculta('25');">
+                65<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_26" href="#" onclick="muestraOculta('26');">
+            </div>
+            <br>
+            <div class="content inline">
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_27" href="#" onclick="muestraOculta('27');">75
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_28" href="#" onclick="muestraOculta('28');">74
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_29" href="#" onclick="muestraOculta('29');">73
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_30" href="#" onclick="muestraOculta('30');">72
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_31" href="#" onclick="muestraOculta('31');">71_
+
+                _61<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_32" href="#" onclick="muestraOculta('32');">
+                62<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_33" href="#" onclick="muestraOculta('33');">
+                63<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_34" href="#" onclick="muestraOculta('34');">
+                64<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_35" href="#" onclick="muestraOculta('35');">
+                65<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_36" href="#" onclick="muestraOculta('36');">
+            </div>
+            <br>
+            <div class="content inline">
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_37" href="#" onclick="muestraOculta('37');">48
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_38" href="#" onclick="muestraOculta('38');">47
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_39" href="#" onclick="muestraOculta('39');">46
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_40" href="#" onclick="muestraOculta('40');">45
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_41" href="#" onclick="muestraOculta('41');">44
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_42" href="#" onclick="muestraOculta('42');">43
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_43" href="#" onclick="muestraOculta('43');">42
+                <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_44" href="#" onclick="muestraOculta('44');">41_
+
+                _31<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_45" href="#" onclick="muestraOculta('45');">
+                32<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_46" href="#" onclick="muestraOculta('46');">
+                33<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_47" href="#" onclick="muestraOculta('47');">
+                34<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_48" href="#" onclick="muestraOculta('48');">
+                35<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_49" href="#" onclick="muestraOculta('49');">
+                36<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_50" href="#" onclick="muestraOculta('50');">
+                37<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_51" href="#" onclick="muestraOculta('51');">
+                38<input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_52" href="#" onclick="muestraOculta('52');">
+            </div>
+
+                <br><br>
+            <input id="contenidos_1" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_2" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_3" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_4" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_5" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_6" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_7" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_8" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_9" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_10" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_11" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_12" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_13" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_14" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_15" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_16" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_17" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_18" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_19" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_20" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_21" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_22" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_23" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_24" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_25" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_26" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_27" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_28" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_29" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_30" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_31" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_32" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_33" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_34" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_35" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_36" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_37" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_38" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_39" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_40" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_41" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_42" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_43" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_44" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_45" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_46" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_47" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_48" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_49" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_50" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_51" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+            <input id="contenidos_52" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+
+        </center>
+    </div>
+
+<br><br>
+
+
+    <form class="form-inline">
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputPassword3">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+
+
+
 
 
         <?php
@@ -636,3 +824,5 @@
         </div>
 
 </section>
+
+
