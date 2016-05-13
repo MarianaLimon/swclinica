@@ -129,14 +129,34 @@
     </center>
 </section>
 
+
+
+
 <br><br><br><br><br><br><br><br><br>
 
-<section>
-    <label class="file">
-        <input type="file" id="file">
-        <span class="file-custom"></span>
-    </label>
+<section id="buscaraciente">
+    <legend><center><h5>Buscar paciente</h5></center></legend>
+
+<form role="form">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <div class="input-group">
+            <input type="text" class="form-control"  placeholder="Nombre(s) seguido de apellido(s)">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Buscar</button>
+      </span>
+        </div>
+    </div>
+    <div class="col-lg-3"></div>
+</form>
+
 </section>
+
+
+
+
+
+
 
 
 
@@ -607,7 +627,29 @@
     <div id="dentadura">
         <center>
             <div class="content inline">
-                    <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_1" href="#" onclick="muestraOculta('1');">18
+                <!--<div class="container">
+                    <a data-toggle="collapse" data-target="#demo1">
+                        ¿Alguien proporciono la informaci&oacute;n por el paciente?
+                    </a>
+                    <div id="demo1" class="collapse">
+                        <div class="form-group row">
+                            <br>
+                            <label for="nombreinformacion">¿Quién proporciono la informaci&oacute;n?</label>
+                            <br><input type="text" id="nombreinformacio" name="name" size="50" class="form-control has-success" placeholder="Nombre">
+                            <input type="text" id="parentescoformacio" name="parentesco" size="10" class="form-control has-success" placeholder="Parentesco">
+                        </div>
+                        <br>
+                    </div>
+                </div>-->
+
+                    <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_1" href="#" data-toggle="collapse" data-target="#demo1">18
+                <div id="demo1" class="collapse">
+                    <div class="form-group row">
+                        <br>
+                        <input id="contenidos_1" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+                    </div>
+                    <br>
+                </div>
                     <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_2" href="#" onclick="muestraOculta('2');">17
                     <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_3" href="#" onclick="muestraOculta('3');">16
                     <input type=image src="img/landing/Diente.png" width="40" height="40" id="enlace_4" href="#" onclick="muestraOculta('4');">15
@@ -675,7 +717,7 @@
             </div>
 
                 <br><br>
-            <input id="contenidos_1" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
+
             <input id="contenidos_2" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
             <input id="contenidos_3" type="text" class="content c-select form-signin" placeholder="Diagnóstico">
             <input id="contenidos_4" type="text" class="content c-select form-signin" placeholder="Diagnóstico">

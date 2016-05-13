@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="inspinia">
+<head>
+    <meta charset="UTF-8">
+    <title page-title>Menú Dentista</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font awesome -->
+    <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Inspinia CSS files -->
+    <link href="styles/animate.css" rel="stylesheet">
+    <link href="styles/justified-nav.css" rel="stylesheet">
+    <link href="styles/signin.css" rel="stylesheet">
+
+    <!-- build:css({.tmp,app}) styles/style.css -->
+    <link id="loadBefore" href="styles/style.css" rel="stylesheet">
+    <script src="scripts/inspinia.js"></script>
+
+    <!-- Anglar App Script -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/directives.js"></script>
+    <script src="scripts/controllers.js"></script>
+
+</head>
+<body>
+<center>
+    <div class="container">
+        <div class="jumbotron" style="padding-bottom:0px;">
+            <img src="img/login/logo.png"  style="width:304px;height:85px;">
+            <br><br><br>
+            <h3>Bienvenido Doctor {{}}</h3>
+            <form class="form-signin" role="form" action=".php" name="login" method="post">
+                <button type="button" class="btn btn-lg btn-primary btn-block">Nuevo Paciente</button>
+                <button type="button" class="btn btn-lg btn-primary btn-block">Buscar Paciente</button>
+                <button type="button" class="btn btn-lg btn-primary btn-block">Registrar Pagos</button>
+                <button type="button" class="btn btn-lg btn-primary btn-block">Consultar Historial</button>
+                <button type="button" class="btn btn-lg btn-primary btn-block">Agenda de Citas</button>
+                <br>
+                <button type="submit" class="btn-link">Cerrar Sesión</button>
+                <br><br><br>
+            </form>
+        </div>
+    </div>
+</center>
+</body>
+</html>
