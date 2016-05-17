@@ -8,9 +8,15 @@ function config($stateProvider, $urlRouterProvider) {
             url: "/index",
             templateUrl: "views/common/content.html"
         })
+
         .state('index.main', {
-            url: "/main",
-            templateUrl: "../views/NuevoPaciente.html",
+            url: "/interdoc",
+            templateUrl: "../views/NuevoPaciente.html"
+
+        })
+        .state('index.interdoc', {
+            url: "/interdoc",
+            templateUrl: "views/interdoc.html",
             data: { pageTitle: 'Example view' }
         })
         .state('landing', {
