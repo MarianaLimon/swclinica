@@ -11,14 +11,12 @@ function config($stateProvider, $urlRouterProvider) {
 
         .state('index.main', {
             url: "/interdoc",
-            templateUrl: "../views/NuevoPaciente.html"
+            templateUrl: "../views/NuevoPaciente.html",
+            data: { pageTitle: 'Nuevo paciente', specialClass: 'landing-page'}
+
 
         })
-        .state('index.interdoc', {
-            url: "/interdoc",
-            templateUrl: "views/interdoc.html",
-            data: { pageTitle: 'Example view' }
-        })
+
         .state('landing', {
             url: "/inicio",
             templateUrl: "../views/GestorClinico.html",
