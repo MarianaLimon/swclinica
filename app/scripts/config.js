@@ -1,5 +1,5 @@
 function config($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/inicio");
+    $urlRouterProvider.otherwise("/login");
 
     $stateProvider
 
@@ -10,9 +10,15 @@ function config($stateProvider, $urlRouterProvider) {
         })
 
         .state('landing', {
-            url: "/inicio",
+            url: "/login",
             templateUrl: "../views/GestorClinico.html",
             data: { pageTitle: 'Login', specialClass: 'landing-page' }
+        })
+
+        .state('index.inicio', {
+            url: "/inicio",
+            templateUrl: "../views/Inicio.html",
+            data: { pageTitle: 'Inicio', specialClass: 'landing-page'}
         })
 
         .state('index.nuevo', {
