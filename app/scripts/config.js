@@ -56,6 +56,12 @@ function config($stateProvider, $urlRouterProvider) {
             templateUrl: "../views/Agenda.html",
             data: { pageTitle: 'Agenda de Citas', specialClass: 'landing-page'}
         })
+
+        .state('index.tratamiento', {
+            url: "/tratamiento",
+            templateUrl: "../views/tratamiento.html",
+            data: { pageTitle: 'Tratamientos', specialClass: 'landing-page'}
+        })
 }
 angular
     .module('inspinia')
