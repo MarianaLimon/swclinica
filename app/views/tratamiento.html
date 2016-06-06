@@ -11,9 +11,97 @@
             <div class="collapse" id="salida">Imprimir datos de tabla datosPaciente</div>
             <a class="list-group-item" id="puerta2" data-toggle="collapse" data-target="#salida2">Informaci&oacute;n C&iacute;nica</a>
             <div class="collapse" id="salida2">Imprimir datos tabla datosHistClinico</div>
+            <a class="list-group-item" id="puerta3" data-toggle="collapse" data-target="#salida3">Estado de los tegidos</a>
+            <div class="collapse" id="salida3">Imprimir datos tabla estadoTegidos</div>
         </div>
 
+        <br><br>
+
+        <div class="row container">
+
+            <h2>Plan de tratamiento</h2><br>
+
+            <div class="col-md-9 col-md-push-3 container">
+                <div class="col-md-3"></div>
+                <div class="col-md-9">
+                <!--    Hover Rows  -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Tratamientos
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Tratamiento</th>
+                                            <th>Fase</th>
+                                            <th>Precio</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Ortodoncia</td>
+                                            <td>Fijado de bracket</td>
+                                            <td>$6,000.00</td>
+                                            <td><button name="rm" class="fa fa-trash-o" aria-hidden="true"> Eliminar</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Ortodoncia</td>
+                                            <td>Cambio de resorte</td>
+                                            <td>$2,000.00</td>
+                                            <td><button name="rm" class="fa fa-trash-o" aria-hidden="true"> Eliminar</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Ortodoncia</td>
+                                            <td>Colocaci&oacute;n de cadena</td>
+                                            <td>$2,500.00</td>
+                                            <td><button name="rm" class="fa fa-trash-o" aria-hidden="true"> Eliminar</button></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End  Hover Rows  -->
+                </div>
+                </div>
+
+
+            <div class="col-md-3 col-md-pull-9 container" >
+
+                <label for="tratamiento"  class=""></label>
+                <select id="tratamiento" class="form-control c-select">
+                    <option selected>tratamiento</option>
+                    <option value="1">Si</option>
+                    <option value="2">No</option>
+                </select>
+                <br>
+                <label for="proceso"></label>
+                <select id="proceso" class="form-control c-select">
+                    <option selected>Poceso</option>
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                </select>
+                <br><br>
+                <div class="form-group input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="text" class="form-control">
+                    <span class="input-group-addon">.00</span>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
 
     </section>
 </div>
-
+<br><br>
