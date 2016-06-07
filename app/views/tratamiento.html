@@ -142,8 +142,31 @@
         <div class="col-md-2"></div>
         <button class="btn-success btn fa fa-floppy-o col-md-3" aria-hidden="true" data-style="zoom-in center">  Guardar Presupuesto</button>
         <div class="col-md-2"></div>
-        <a href="#/index/historialpagos" class="btn-success btn fa fa-money col-md-3" aria-hidden="true" data-style="zoom-in center">  Registrar Pago</a>
+        <a href="#/index/registrarpagos" class="btn-success btn fa fa-money col-md-3" aria-hidden="true" data-style="zoom-in center">  Registrar Pago</a>
     </center><br><br><br>
     </section>
 </div>
 <br><br>
+
+
+
+<article>
+    <header>
+        <h1>Output element sample</h1>
+        <p>Demo showing output element in HTML5</p>
+    </header>
+    <form onsubmit="return false" oninput="    totalamount.value = Math.round(principal.value * (Math.pow((1 + interest.value / 100), period.value)) * 100) / 100;">
+        Principal<input name="principal" id="principal" type="number">
+        <br />
+        Duration<input name="period" id="period" type="number">
+        <br />
+        Interest Rate<input name="interest" id="interest" type="number">
+        <br />
+        Total amount <output name="totalamount" id="totalamount" for="principal period interest"></output>
+    </form>
+    <footer>
+        <h1></h1>
+        <p>HTML Goodies</p>
+    </footer>
+</article>
+<br><br><br><br><br><br>
