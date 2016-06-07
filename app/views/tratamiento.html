@@ -17,13 +17,13 @@
 
         <br><br>
 
-        <div class="row container">
+        <div class="row container ">
 
             <h2>Plan de tratamiento</h2><br>
 
             <div class="col-md-9 col-md-push-3 container">
                 <div class="col-md-3"></div>
-                <div class="col-md-9">
+                <div class="col-md-8 container row">
                 <!--    Hover Rows  -->
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -47,21 +47,21 @@
                                             <td>Ortodoncia</td>
                                             <td>Fijado de bracket</td>
                                             <td>$6,000.00</td>
-                                            <td><button name="rm" class="fa fa-trash-o" aria-hidden="true"> Eliminar</button></td>
+                                            <td><button name="rm" class="fa fa-trash-o btn-danger" aria-hidden="true"> Eliminar</button></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
                                             <td>Ortodoncia</td>
                                             <td>Cambio de resorte</td>
                                             <td>$2,000.00</td>
-                                            <td><button name="rm" class="fa fa-trash-o" aria-hidden="true"> Eliminar</button></td>
+                                            <td><button name="rm" class="fa fa-trash-o btn-danger" aria-hidden="true"> Eliminar</button></td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>Ortodoncia</td>
                                             <td>Colocaci&oacute;n de cadena</td>
                                             <td>$2,500.00</td>
-                                            <td><button name="rm" class="fa fa-trash-o" aria-hidden="true"> Eliminar</button></td>
+                                            <td><button name="rm" class="fa fa-trash-o btn-danger" aria-hidden="true"> Eliminar</button></td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -69,6 +69,45 @@
                             </div>
                         </div>
                         <!-- End  Hover Rows  -->
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th>TOTAL</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td>$10,500.00</td>
+                                    </tr>
+                                    </thead>
+                                    <thead>
+                                    <tr>
+                                        <th>DESCUENTO(S)</th>
+                                        <td></td>
+                                        <td>10%</td>
+                                        <td>$1,050.00</td>
+                                    </tr>
+                                    </thead>
+                                    <thead>
+                                    <tr>
+                                        <th>TOTAL NETO</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td><strong>$9,450.00</strong></td>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
                 </div>
                 </div>
 
@@ -89,19 +128,22 @@
                     <option value="no">No</option>
                 </select>
                 <br><br>
-                <div class="form-group input-group">
+                <div class="form-group input-group form-control-static">
                     <span class="input-group-addon">$</span>
                     <input type="text" class="form-control">
                     <span class="input-group-addon">.00</span>
                 </div>
+                <br><br>
+                <button class="btn-info btn fa fa-plus-circle" aria-hidden="true" data-style="zoom-in center">  Agregar Nuevo Tratamiento</button>
             </div>
-
-
-
-
-
         </div>
 
+        <br><br><br><center>
+        <div class="col-md-2"></div>
+        <button class="btn-success btn fa fa-floppy-o col-md-3" aria-hidden="true" data-style="zoom-in center">  Guardar Presupuesto</button>
+        <div class="col-md-2"></div>
+        <a href="#/index/historialpagos" class="btn-success btn fa fa-money col-md-3" aria-hidden="true" data-style="zoom-in center">  Registrar Pago</a>
+    </center><br><br><br>
     </section>
 </div>
 <br><br>
