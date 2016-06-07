@@ -14,24 +14,26 @@
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
     <!-- Main Inspinia CSS files -->
     <link href="styles/animate.css" rel="stylesheet">
     <link href="styles/justified-nav.css" rel="stylesheet">
     <link href="styles/signin.css" rel="stylesheet">
     <!-- endbower -->
     <!-- endbuild -->
+
     <!-- build:css({.tmp,app}) styles/style.css -->
     <link id="loadBefore" href="styles/style.css" rel="stylesheet">
     <!-- endbuild -->
+    <link rel="shortcut icon" href="styles/patterns/1.png">
+
 </head>
+
 <!-- ControllerAs syntax -->
 <!-- Main controller with serveral data used in Inspinia theme on diferent view -->
 <body ng-controller="MainCtrl as main" class="{{$state.current.data.specialClass}}" landing-scrollspy id="page-top">
 
 <!-- Main view  -->
 <div ui-view></div>
-
 
 <!-- build:js(.) scripts/vendor.js -->
 <!-- jQuery and Bootstrap -->
@@ -60,6 +62,8 @@
 <!--                      -->
 
 <!-- endbuild -->
+
+
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <!-- Custom and plugin javascript -->
