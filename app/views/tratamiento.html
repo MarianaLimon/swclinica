@@ -1,151 +1,312 @@
-<div class="container">
+<div class="container warper">
     <br><br>
     <section id="tratamientos">
         <legend><center><h5>Tratamientos GS</h5></center></legend>
-
-        <div class="list-group container">
+        <div class="list-group container responsive-list">
             <a href="#" class="list-group-item active">
-                Datos del Paciente {{id_Paciente}}
+                Datos del Paciente {{id_Paciente,nombre_paciente}}
             </a>
-            <a class="list-group-item" id="puerta" data-toggle="collapse" data-target="#salida" >Datos Generales</a>
+            <a class="list-group-item" id="puerta" data-toggle="collapse" data-target="#salida">Datos Generales</a>
             <div class="collapse" id="salida">Imprimir datos de tabla datosPaciente</div>
             <a class="list-group-item" id="puerta2" data-toggle="collapse" data-target="#salida2">Informaci&oacute;n C&iacute;nica</a>
             <div class="collapse" id="salida2">Imprimir datos tabla datosHistClinico</div>
             <a class="list-group-item" id="puerta3" data-toggle="collapse" data-target="#salida3">Estado de los tegidos</a>
             <div class="collapse" id="salida3">Imprimir datos tabla estadoTegidos</div>
-        </div>
-
-        <br><br>
-
-        <div class="row container ">
-
-            <h2>Plan de tratamiento</h2><br>
-
-            <div class="col-md-9 col-md-push-3 container">
-                <div class="col-md-3"></div>
-                <div class="col-md-8 container row">
-                <!--    Hover Rows  -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                Tratamientos
-                            </div>
-                            <div class="panel-body">
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Tratamiento</th>
-                                            <th>Fase</th>
-                                            <th>Precio</th>
-                                            <th></th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Ortodoncia</td>
-                                            <td>Fijado de bracket</td>
-                                            <td>$6,000.00</td>
-                                            <td><button name="rm" class="fa fa-trash-o btn-danger" aria-hidden="true"> Eliminar</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Ortodoncia</td>
-                                            <td>Cambio de resorte</td>
-                                            <td>$2,000.00</td>
-                                            <td><button name="rm" class="fa fa-trash-o btn-danger" aria-hidden="true"> Eliminar</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Ortodoncia</td>
-                                            <td>Colocaci&oacute;n de cadena</td>
-                                            <td>$2,500.00</td>
-                                            <td><button name="rm" class="fa fa-trash-o btn-danger" aria-hidden="true"> Eliminar</button></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End  Hover Rows  -->
-
-
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                    <tr>
-                                        <th>TOTAL</th>
-                                        <td></td>
-                                        <td></td>
-                                        <td>$10,500.00</td>
-                                    </tr>
-                                    </thead>
-                                    <thead>
-                                    <tr>
-                                        <th>DESCUENTO(S)</th>
-                                        <td></td>
-                                        <td>10%</td>
-                                        <td>$1,050.00</td>
-                                    </tr>
-                                    </thead>
-                                    <thead>
-                                    <tr>
-                                        <th>TOTAL NETO</th>
-                                        <td></td>
-                                        <td></td>
-                                        <td><strong>$9,450.00</strong></td>
-                                    </tr>
-                                    </thead>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                </div>
-                </div>
-
-
-            <div class="col-md-3 col-md-pull-9 container" >
-
-                <label for="tratamiento"  class=""></label>
-                <select id="tratamiento" class="form-control c-select">
-                    <option selected>tratamiento</option>
-                    <option value="1">Si</option>
-                    <option value="2">No</option>
-                </select>
-                <br>
-                <label for="proceso"></label>
-                <select id="proceso" class="form-control c-select">
-                    <option selected>Poceso</option>
-                    <option value="si">Si</option>
-                    <option value="no">No</option>
-                </select>
-                <br><br>
-                <div class="form-group input-group form-control-static">
-                    <span class="input-group-addon">$</span>
-                    <input type="text" class="form-control">
-                    <span class="input-group-addon">.00</span>
-                </div>
-                <br><br>
-                <button class="btn-info btn fa fa-plus-circle" aria-hidden="true" data-style="zoom-in center">  Agregar Nuevo Tratamiento</button>
-            </div>
-        </div>
-
-        <br><br><br><center>
-        <div class="col-md-2"></div>
-        <button class="btn-success btn fa fa-floppy-o col-md-3" aria-hidden="true" data-style="zoom-in center">  Guardar Presupuesto</button>
-        <div class="col-md-2"></div>
-        <a href="#/index/registrarpagos" class="btn-success btn fa fa-money col-md-3" aria-hidden="true" data-style="zoom-in center">  Registrar Pago</a>
-    </center><br><br><br>
+        </div><br><br>
     </section>
 </div>
+
+<div class="wrapper wrapper-content animated container">
+
+    <h2>Plan de tratamiento</h2><br>
+    <div class="ibox float-e-margins">
+        <div class="ibox-title">
+            <h5>Tabla de tratamientos con Cl&iacute;nica Dental GS</h5>
+            <div class="ibox-tools">
+                <a class="collapse-link">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+        <div class="ibox-content">
+            <table class="footable table table-stripped toggle-arrow-tiny container" data-page-size="5">
+                <thead>
+                <tr>
+                    <th>Tratamiento</th>
+                    <th>Fase del Tratamiento</th>
+                    <th>Costo</th>
+                    <th data-hide="all">Cantidad Pagada</th>
+                    <th data-hide="all">Adeudo Pendiente</th>
+                    <th>Fecha</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Consulta</td>
+                    <td>Presupuesto</td>
+                    <td>$0.00</td>
+                    <td>$0.00</td>
+                    <td>$0.00</td>
+                    <td>Jun 1, 2016</td>
+                </tr>
+                <tr>
+                    <td>Consulta</td>
+                    <td>Diagnostico</td>
+                    <td>$100.00</td>
+                    <td>$100.00</td>
+                    <td>$0.00</td>
+                    <td>Jun 1, 2016</td>
+                </tr>
+                <tr>
+                    <td>Consulta</td>
+                    <td>Toma de rx</td>
+                    <td>$400.00</td>
+                    <td>$400.00</td>
+                    <td>$0.00</td>
+                    <td>Jun 17, 2016</td>
+                </tr>
+                <tr>
+                    <td>Profilaxis</td>
+                    <td>Profilaxis</td>
+                    <td>$500.00</td>
+                    <td>$100.00</td>
+                    <td>$400.00</td>
+                    <td>Jun 22, 2016</td>
+                <tr>
+                    <td>Selladores</td>
+                    <td>Selladores</td>
+                    <td>$100.00</td>
+                    <td>$100.00</td>
+                    <td>$0.00</td>
+                    <td>Jun 30, 2016</td>
+                </tr>
+                <tr>
+                    <td>Aplicaci&oacute;n de fl&uacute;or</td>
+                    <td>Aplicaci&oacute;n de fl&uacute;or</td>
+                    <td>$100.00</td>
+                    <td>$100.00</td>
+                    <td>$0.00</td>
+                    <td>Jun 1, 2016</td>
+                </tr>
+                <!--<tr>
+                    <td>Gamma project</td>
+                    <td>Anna Jordan</td>
+                    <td>$100.00</td>
+                    <td>$100.00</td>
+                    <td>$0.00</td>
+                    <td>Jun 1, 2016</td>
+                </tr>
+                <tr>
+                    <td>Project
+                        <small>This is example of project</small>
+                    </td>
+                    <td>Patrick Smith</td>
+                    <td>0800 051213</td>
+                    <td>Inceptos Hymenaeos Ltd</td>
+                    <td><span class="pie">0.52/1.561</span></td>
+                    <td>20%</td>
+                    <td>Jul 14, 2013</td>
+                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Alpha project</td>
+                    <td>Alice Jackson</td>
+                    <td>0500 780909</td>
+                    <td>Nec Euismod In Company</td>
+                    <td><span class="pie">6,9</span></td>
+                    <td>40%</td>
+                    <td>Jul 16, 2013</td>
+                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Betha project</td>
+                    <td>John Smith</td>
+                    <td>0800 1111</td>
+                    <td>Erat Volutpat</td>
+                    <td><span class="pie">3,1</span></td>
+                    <td>75%</td>
+                    <td>Jul 18, 2013</td>
+                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Gamma project</td>
+                    <td>Anna Jordan</td>
+                    <td>(016977) 0648</td>
+                    <td>Tellus Ltd</td>
+                    <td><span class="pie">4,9</span></td>
+                    <td>18%</td>
+                    <td>Jul 22, 2013</td>
+                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Alpha project</td>
+                    <td>Alice Jackson</td>
+                    <td>0500 780909</td>
+                    <td>Nec Euismod In Company</td>
+                    <td><span class="pie">6,9</span></td>
+                    <td>40%</td>
+                    <td>Jul 16, 2013</td>
+                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Project
+                        <small>This is example of project</small>
+                    </td>
+                    <td>Patrick Smith</td>
+                    <td>0800 051213</td>
+                    <td>Inceptos Hymenaeos Ltd</td>
+                    <td><span class="pie">0.52/1.561</span></td>
+                    <td>20%</td>
+                    <td>Jul 14, 2013</td>
+                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Gamma project</td>
+                    <td>Anna Jordan</td>
+                    <td>(016977) 0648</td>
+                    <td>Tellus Ltd</td>
+                    <td><span class="pie">4,9</span></td>
+                    <td>18%</td>
+                    <td>Jul 22, 2013</td>
+                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                </tr>-->
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="5">
+                        <ul class="pagination pull-right"></ul>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+
+    <div class="col-md-9 col-md-push-3 container">
+        <div class="col-md-3"></div>
+        <div class="col-md-8 container row">
+            <!--    Hover Rows  -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Tratamientos
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Tratamiento</th>
+                                <th>Fase</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Ortodoncia</td>
+                                <td>Fijado de bracket</td>
+                                <td>$6,000.00</td>
+                                <td><button name="rm" class="fa fa-trash-o btn-danger" aria-hidden="true"> Eliminar</button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Ortodoncia</td>
+                                <td>Cambio de resorte</td>
+                                <td>$2,000.00</td>
+                                <td><button name="rm" class="fa fa-trash-o btn-danger" aria-hidden="true"> Eliminar</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Ortodoncia</td>
+                                <td>Colocaci&oacute;n de cadena</td>
+                                <td>$2,500.00</td>
+                                <td><button name="rm" class="fa fa-trash-o btn-danger" aria-hidden="true"> Eliminar</button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- End  Hover Rows  -->
+
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>TOTAL</th>
+                                <td></td>
+                                <td></td>
+                                <td>$10,500.00</td>
+                            </tr>
+                            </thead>
+                            <thead>
+                            <tr>
+                                <th>DESCUENTO(S)</th>
+                                <td></td>
+                                <td>10%</td>
+                                <td>$1,050.00</td>
+                            </tr>
+                            </thead>
+                            <thead>
+                            <tr>
+                                <th>TOTAL NETO</th>
+                                <td></td>
+                                <td></td>
+                                <td><strong>$9,450.00</strong></td>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="col-md-3 col-md-pull-9 container" >
+
+        <label for="tratamiento"  class=""></label>
+        <select id="tratamiento" class="form-control c-select">
+            <option selected>tratamiento</option>
+            <option value="1">Si</option>
+            <option value="2">No</option>
+        </select>
+        <br>
+        <label for="proceso"></label>
+        <select id="proceso" class="form-control c-select">
+            <option selected>Poceso</option>
+            <option value="si">Si</option>
+            <option value="no">No</option>
+        </select>
+        <br><br>
+        <div class="form-group input-group form-control-static">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control">
+            <span class="input-group-addon">.00</span>
+        </div>
+        <br><br>
+        <button class="btn-info btn fa fa-plus-circle" aria-hidden="true" data-style="zoom-in center">  Agregar Nuevo Tratamiento</button>
+    </div>
+</div>
+
+<br><br><br><center>
+    <div class="col-md-2"></div>
+    <button class="btn-success btn fa fa-floppy-o col-md-3" aria-hidden="true" data-style="zoom-in center">  Guardar Presupuesto</button>
+    <div class="col-md-2"></div>
+    <a href="#/index/registrarpagos" class="btn-success btn fa fa-money col-md-3" aria-hidden="true" data-style="zoom-in center">  Registrar Pago</a>
+</center><br><br><br>
 <br><br>
 
 
@@ -170,3 +331,263 @@
     </footer>
 </article>
 <br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+<!--<script src="scripts/bootstrap.min.js"></script>-->
+<script src="scripts/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="scripts/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- FooTable -->
+<script src="scripts/plugins/footable/footable.all.min.js"></script>
+
+
+
+<!-- Page-Level Scripts -->
+<script>
+    $(document).ready(function() {
+
+        $('.footable').footable();
+
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+('Consulta', 1, 'Presupuesto'),
+('Consulta', 2, 'Diagnóstico'),
+('Consulta', 3, 'Toma de rx'),
+('Profilaxis', 1, 'Profilaxis'),
+('Selladores', 1, 'Selladores'),
+('Aplicación de flúor', 1, 'Aplicación de flúor'),
+('Extracción', 1, 'Extracción'),
+('Extracción', 2, 'Revisión,retiro de puntos'),
+('Extracción', 3, 'Revisión'),
+('Extracción', 4, 'Toma de rx'),
+('Extracción infantil', 1, 'Extracción'),
+('Extracción infantil', 2, 'Revisión, retiro de puntos'),
+('Extracción infantil', 3, 'Revisión'),
+('Extracción infantil', 4, 'Toma de rx'),
+('Curetaje abierto', 1, 'Revisión'),
+('Curetaje abierto', 2, 'Diagnóstico RD'),
+('Curetaje abierto', 3, 'Curetaje'),
+('Curetaje abierto', 4, 'Revisión'),
+('Curetaje cerrado', 1, 'Diagnóstico curetaje'),
+('Curetaje cerrado', 2, 'Diagnóstico curetaje'),
+('Cx 3er molar', 1, 'Extracción'),
+('Cx 3er molar', 2, 'Retiro de puntos'),
+('Cx 3er molar', 3, 'Revisión'),
+('Cx 3er molar', 4, 'Toma de rx'),
+('Cx Maxilofacial', 1, 'Cx 3er molar'),
+('Cx Maxilofacial', 2, 'Cx supernumerarios'),
+('Cx Maxilofacial', 3, 'Frenilectomia'),
+('Cx Maxilofacial', 4, 'Biopsia'),
+('Cx Maxilofacial', 5, 'Toma de rx'),
+('Apicectomia', 1, 'Apicectomia'),
+('Apicectomia', 2, 'Retiro de puntos'),
+('Apicectomia', 3, 'Monitoreo RD'),
+('Implante', 1, 'Colocación de implante. Colocar prótesis provisional'),
+('Implante', 2, 'Retiro de puntos, monitoreo radiográfico'),
+('Implante', 3, 'Monitoreo y colocación de conformador'),
+('Implante', 4, 'Colocación de corona'),
+('Implante', 5, 'Revisión'),
+('Implante', 6, 'Toma de rx'),
+('Resina', 1, 'Resina'),
+('Resina', 2, 'Curación'),
+('Resina', 2, 'Obturación y ajuste oclusal'),
+('Resina', 3, 'Ajuste oclusal'),
+('Resina', 4, 'Infantil'),
+('Incrustación metálica', 1, 'Preparación y toma de impresión'),
+('Incrustación metálica', 2, 'Valoración (reconstrucción base cabitaria, endodoncia)'),
+('Incrustación metálica', 3, 'Cementación ajuste oclusal'),
+('Incrustación metálica', 4, 'Ajuste oclusal'),
+('Incrustación estética', 1, 'Preparación y toma de impresión'),
+('Incrustación estética', 2, 'Valoración (reconstrucción base cabitaria, endodoncia)'),
+('Incrustación estética', 3, 'Cementación ajuste oclusal'),
+('Incrustación estética', 4, 'Ajuste oclusal'),
+('Endodoncia', 1, 'Acceso'),
+('Endodoncia', 2, 'Despulpar'),
+('Endodoncia', 3, 'Reconstrucción'),
+('Endodoncia', 4, 'Obturar'),
+('Endodoncia', 5, 'Toma de Rx'),
+('Corona Metal Porcelana', 1, 'Toma de impresión'),
+('Corona Metal Porcelana', 2, 'Preparación, toma de impresión, ajuste y colocación de provisional'),
+('Corona Metal Porcelana', 3, 'Prueba de metal'),
+('Corona Metal Porcelana', 4, 'Prueba de porcelana y ajuste oclusal'),
+('Corona Metal Porcelana', 5, 'Cementado'),
+('Corona Zirconia', 1, 'Toma de impresión'),
+('Corona Zirconia', 2, 'Preparación, toma de impresión, ajuste y colocación de provisional'),
+('Corona Zirconia', 3, 'Prueba de núcleo'),
+('Corona Zirconia', 4, 'Ajuste o cementado'),
+('Corona Zirconia', 5, 'Ajuste oclusal'),
+('Corona Metálica', 1, 'Toma de impresión'),
+('Corona Metálica', 2, 'Preparación, toma de impresión, ajuste y colocación de provisional'),
+('Corona Metálica', 3, 'Cementado y ajuste oclusal'),
+('Corona Metálica', 4, 'Ajuste oclusal'),
+('Puente', 1, 'Toma de impresión, realizar provisional'),
+('Puente', 2, 'Preparación, reconstrucción, toma de impresión, colocación de provisional'),
+('Puente', 3, 'Prueba de metal, cementado de provisional'),
+('Puente', 4, 'Prueba de porcelana, colocación de provisional'),
+('Puente', 5, 'Cementado, ajuste oclusal'),
+('Prótesis removible', 1, 'Toma de impresión'),
+('Prótesis removible', 2, 'Prueba de base, colocación de provisional'),
+('Prótesis removible', 3, 'Prueba de rodillos'),
+('Prótesis removible', 4, 'Prueba de dientes'),
+('Prótesis removible', 5, 'entrega de placa'),
+('Corona Metal Porcelana', 5, 'Cementado'),
+('Corona Zirconia', 1, 'Toma de impresión'),
+('Corona Zirconia', 2, 'Preparación, toma de impresión, ajuste y colocación de provisional'),
+('Corona Zirconia', 3, 'Prueba de núcleo'),
+('Corona Zirconia', 4, 'Ajuste o cementado'),
+('Corona Zirconia', 5, 'Ajuste oclusal'),
+('Corona Metálica', 1, 'Toma de impresión'),
+('Corona Metálica', 2, 'Preparación, toma de impresión, ajuste y colocación de provisional'),
+('Corona Metálica', 3, 'Cementado y ajuste oclusal'),
+('Corona Metálica', 4, 'Ajuste oclusal'),
+('Puente', 1, 'Toma de impresión, realizar provisional'),
+('Puente', 2, 'Preparación, reconstrucción, toma de impresión, colocación de provisional'),
+('Puente', 3, 'Prueba de metal, cementado de provisional'),
+('Puente', 4, 'Prueba de porcelana, colocación de provisional'),
+('Puente', 5, 'Cementado, ajuste oclusal'),
+('Prótesis removible', 1, 'Toma de impresión'),
+('Prótesis removible', 2, 'Prueba de base, colocación de provisional'),
+('Prótesis removible', 3, 'Prueba de rodillos'),
+('Prótesis removible', 4, 'Prueba de dientes'),
+('Prótesis removible', 5, 'Entrega de placa'),
+('Corona Metal Porcelana', 5, 'Cementado'),
+('Corona Zirconia', 1, 'Toma de impresión'),
+('Corona Zirconia', 2, 'Preparación, toma de impresión, ajuste y colocación de provisional'),
+('Corona Zirconia', 3, 'Prueba de núcleo'),
+('Corona Zirconia', 4, 'Ajuste o cementado'),
+('Corona Zirconia', 5, 'Ajuste oclusal'),
+('Corona Metálica', 1, 'Toma de impresión'),
+('Corona Metálica', 2, 'Preparación, toma de impresión, ajuste y colocación de provisional'),
+('Corona Metálica', 3, 'Cementado y ajuste oclusal'),
+('Corona Metálica', 4, 'Ajuste oclusal'),
+('Puente', 1, 'Toma de impresión, realizar provisional'),
+('Puente', 2, 'Preparación, reconstrucción, toma de impresión, colocación de provisional'),
+('Puente', 3, 'Prueba de metal, cementado de provisional'),
+('Puente', 4, 'Prueba de porcelana, colocación de provisional'),
+('Puente', 5, 'Cementado, ajuste oclusal'),
+('Prótesis removible', 1, 'Toma de impresión'),
+('Prótesis removible', 2, 'Prueba de base, colocación de provisional'),
+('Prótesis removible', 3, 'Prueba de rodillos'),
+('Prótesis removible', 3, 'Prueba de dientes'),
+('Prótesis removible', 4, 'Entrega de placa'),
+('Prótesis removible', 6, 'Ajustes de prótesis'),
+('Prostodoncia', 1, 'Toma de impresión para cucharilla'),
+('Prostodoncia', 2, 'Toma de impresión para placa base, colocar provisional'),
+('Prostodoncia', 3, 'Prueba placa base'),
+('Prostodoncia', 4, 'Prueba de rodillos'),
+('Prostodoncia', 5, 'Prueba de dientes'),
+('Prostodoncia', 6, 'Entrega y ajuste de prótesis'),
+('Prostodoncia', 7, 'Ajustes de prótesis'),
+('Exodoncia', 1, 'Exodoncia'),
+('Exodoncia', 2, 'Revisión'),
+('Exodoncia', 3, 'Toma de Rx'),
+('Pulpectomia', 1, 'Pulpectomia'),
+('Pulpectomia', 2, 'Revisión'),
+('Pulpectomia', 3, 'Obturar o colocar corona'),
+('Pulpectomia', 4, 'Pulpotomia'),
+('Pulpectomia', 5, 'Revisión'),
+('Pulpectomia', 6, 'Obturar'),
+('Pulpectomia', 7, 'Colocar corona o obturar'),
+('Corona infantil', 1, 'Toma de impresión'),
+('Corona infantil', 2, 'Retiro de caries, cementado de corona, ajuste'),
+('Prótesis removible', 6, 'Ajustes de prótesis'),
+('Prostodoncia', 1, 'Toma de impresión para cucharilla'),
+('Prostodoncia', 2, 'Toma de impresión para placa base, colocar provisional'),
+('Prostodoncia', 3, 'Prueba placa base'),
+('Prostodoncia', 4, 'Prueba de rodillos'),
+('Prostodoncia', 5, 'Prueba de dientes'),
+('Prostodoncia', 6, 'Entrega y ajuste de prótesis'),
+('Prostodoncia', 7, 'Ajustes de prótesis'),
+('Exodoncia', 1, 'Exodoncia'),
+('Exodoncia', 2, 'Revisión'),
+('Exodoncia', 3, 'Toma de Rx'),
+('Pulpectomia', 1, 'Pulpectomia'),
+('Pulpectomia', 2, 'Revisión'),
+('Pulpectomia', 3, 'Obturar o colocar corona'),
+('Pulpectomia', 4, 'Pulpotomia'),
+('Pulpectomia', 5, 'Revisión'),
+('Pulpectomia', 6, 'Obturar'),
+('Pulpectomia', 7, 'Colocar corona o obturar'),
+('Corona infantil', 1, 'Toma de impresión'),
+('Corona infantil', 2, 'Retiro de caries, cementado de corona, ajuste'),
+('Terapia láser oral', 1, 'Terapia amelogénesis'),
+('Terapia láser oral', 2, 'Terapia obsesos dentales'),
+('Terapia láser oral', 3, 'Terapia para alveolitis'),
+('Terapia láser oral', 4, 'Blanqueamiento láser'),
+('Terapia láser oral', 5, 'Terapia condilar  y ATM'),
+('Terapia láser oral', 6, 'Terapia para lesiones bucales'),
+('Terapia láser oral', 7, 'Terapia para gingivitis'),
+('Terapia láser oral', 8, 'Terapia para periodontitis'),
+('Terapia láser oral', 9, 'Terapia regenerativa'),
+('Terapia láser oral', 10, 'Terapia analgésica'),
+('Terapia láser oral', 11, 'Terapia para hematomas'),
+('Terapia láser oral', 12, 'Terapia parálisis emifacial'),
+('Terapia láser oral', 13, 'Terapia para sensibilidad dental'),
+('Terapia láser oral', 14, 'Terapia neuralgia del trigémino'),
+('Terapia láser oral', 15, 'Terapias posoperatoria cx'),
+('Terapia láser oral', 16, 'Terapia para pulpitis reversible'),
+('Terapia láser oral', 17, 'Terapia para dermatitis herpetiforme'),
+('Terapia láser estético cutánea', 1, 'Terapia para acné'),
+('Terapia láser estético cutánea', 2, 'Terapia manchas solares'),
+('Terapia láser estético cutánea', 3, 'Terapia cicatriz queloide'),
+('Terapia láser estético cutánea', 4, 'Terapia para comedones'),
+('Terapia láser estético cutánea', 5, 'Terapia para cuperosis'),
+('Terapia láser estético cutánea', 6, 'Terapia de cutis graso'),
+('Terapia láser estético cutánea', 7, 'Terapia cutis reseco'),
+('Terapia láser estético cutánea', 8, 'Terapia para eccema'),
+('Terapia médica', 1, 'Acroparestesia'),
+('Terapia médica', 2, 'Terapia para acufenos'),
+('Ortodoncia', 1, 'Consulta, solicitud de estudios'),
+('Ortodoncia', 2, 'Colocación de brackets superiores'),
+('Ortodoncia', 3, 'Colocación de brackets inferiores'),
+('Ortodoncia', 4, 'Recolocación de bracket'),
+('Ortodoncia', 5, 'Cambio de módulos sup'),
+('Ortodoncia', 6, 'Cambio de módulos inferior'),
+('Ortodoncia', 7, 'Cambio de arco superior'),
+('Ortodoncia', 8, 'Cambio de arco inferior'),
+('Ortodoncia', 9, 'Stripping'),
+('Ortodoncia', 10, 'Fijado de bracket'),
+('Ortodoncia', 11, 'Fijado de bracket con costo'),
+('Ortodoncia', 12, 'Cambio de resorte'),
+('Ortodoncia', 13, 'Colocación de cadena'),
+('Ortodoncia', 14, 'Colocación de bandas'),
+('Ortodoncia', 15, 'Colocación de tubo'),
+('Ortodoncia', 16, 'Toma de impresión para retenedores'),
+('Ortodoncia', 17, 'Entrega de retenedores'),
+('Ortodoncia', 18, 'Revision por molestia'),
+('Ortodoncia', 19, 'Entorchado de arcada superior'),
+('Ortodoncia', 20, 'Entorchado de arcada inferior'),
+('Ortodoncia', 21, 'Cadena Elastomerica sup e inf'),
+('Ortodoncia', 22, 'Colocación de cadena tipo abierta en arcada inferior'),
+('Ortodoncia', 23, 'Colocación de cadena tipo abierta en arcada Superior'),
+('Ortodoncia', 24, 'Aparato de ortopedia'),
+('Ortodoncia', 25, 'Toma de impresión'),
+('Ortodoncia', 26, 'Ajuste de aparato'),
+('Ortodoncia', 27, 'Activación'),
+('Ortodoncia', 28, 'Trampa lingual'),
+('Ortodoncia', 29, 'Mantenedor de espacio'),
+('Ortodoncia', 30, 'Tornillo de expansión'),
+('Ortodoncia', 31, 'Hyrax'),
+('Ortodoncia', 32, 'Pistas planas'),
+('Ortodoncia', 33, 'Guarda oclusal');-->
