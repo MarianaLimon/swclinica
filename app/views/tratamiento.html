@@ -10,8 +10,8 @@
             <div class="collapse" id="salida">Imprimir datos de tabla datosPaciente</div>
             <a class="list-group-item" id="puerta2" data-toggle="collapse" data-target="#salida2">Informaci&oacute;n C&iacute;nica</a>
             <div class="collapse" id="salida2">Imprimir datos tabla datosHistClinico</div>
-            <a class="list-group-item" id="puerta3" data-toggle="collapse" data-target="#salida3">Estado de los tegidos</a>
-            <div class="collapse" id="salida3">Imprimir datos tabla estadoTegidos</div>
+            <a class="list-group-item" id="puerta3" data-toggle="collapse" data-target="#salida3">Estado de los tejidos</a>
+            <div class="collapse" id="salida3">Imprimir datos tabla estadoTejidos</div>
         </div><br><br>
     </section>
 </div>
@@ -194,7 +194,7 @@
             <!--    Hover Rows  -->
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    Tratamientos
+                    Presupuesto
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive">
@@ -277,6 +277,10 @@
 
     <div class="col-md-3 col-md-pull-9 container" >
 
+        <label class="checkbox-inline">
+            <input type="checkbox" value="agree">  El paciente cuenta con membres&iacute;a. <a href="#">Pagar membres&iacute;a</a>.
+        </label>
+        <br><br>
         <label for="tratamiento"  class=""></label>
         <select id="tratamiento" class="form-control c-select">
             <option selected>tratamiento</option>
@@ -297,47 +301,19 @@
             <span class="input-group-addon">.00</span>
         </div>
         <br><br>
-        <button class="btn-info btn fa fa-plus-circle" aria-hidden="true" data-style="zoom-in center">  Agregar Nuevo Tratamiento</button>
+        <button class="btn-info btn fa fa-plus-circle" aria-hidden="true" data-style="zoom-in center">  Confirmar</button>
     </div>
 </div>
 
 <br><br><br><center>
     <div class="col-md-2"></div>
-    <button class="btn-success btn fa fa-floppy-o col-md-3" aria-hidden="true" data-style="zoom-in center">  Guardar Presupuesto</button>
+    <button class="btn-success btn fa fa-floppy-o col-md-3" aria-hidden="true" data-style="zoom-in center">  Registrar servicio(s)</button>
     <div class="col-md-2"></div>
     <a href="#/index/registrarpagos" class="btn-success btn fa fa-money col-md-3" aria-hidden="true" data-style="zoom-in center">  Registrar Pago</a>
 </center><br><br><br>
 <br><br>
 
-
-
-<article>
-    <header>
-        <h1>Output element sample</h1>
-        <p>Demo showing output element in HTML5</p>
-    </header>
-    <form onsubmit="return false" oninput="    totalamount.value = Math.round(principal.value * (Math.pow((1 + interest.value / 100), period.value)) * 100) / 100;">
-        Principal<input name="principal" id="principal" type="number">
-        <br />
-        Duration<input name="period" id="period" type="number">
-        <br />
-        Interest Rate<input name="interest" id="interest" type="number">
-        <br />
-        Total amount <output name="totalamount" id="totalamount" for="principal period interest"></output>
-    </form>
-    <footer>
-        <h1></h1>
-        <p>HTML Goodies</p>
-    </footer>
-</article>
-<br><br><br><br><br><br>
-
-
-
-
-
-
-
+<br><br><br>
 
 <!--<script src="scripts/bootstrap.min.js"></script>-->
 <script src="scripts/plugins/metisMenu/jquery.metisMenu.js"></script>

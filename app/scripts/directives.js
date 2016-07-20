@@ -17,7 +17,7 @@ function pageTitle($rootScope, $timeout) {
             $rootScope.$on('$stateChangeStart', listener);
         }
     }
-};
+}
 
 /**
  * sideNavigation - Directive for run metsiMenu on sidebar navigation
@@ -32,7 +32,7 @@ function sideNavigation($timeout) {
             });
         }
     };
-};
+}
 
 /**
  * iboxTools - Directive for iBox tools elements in right corner of ibox
@@ -56,7 +56,7 @@ function iboxTools($timeout) {
                     ibox.resize();
                     ibox.find('[id^=map-]').resize();
                 }, 50);
-            },
+            }
                 // Function for close ibox
                 $scope.closebox = function () {
                     var ibox = $element.closest('div.ibox');
@@ -64,7 +64,7 @@ function iboxTools($timeout) {
                 }
         }
     };
-};
+}
 
 /**
  * minimalizaSidebar - Directive for minimalize sidebar
@@ -97,7 +97,7 @@ function minimalizaSidebar($timeout) {
             }
         }
     };
-};
+}
 
 /**
  * iboxTools with full screen - Directive for iBox tools elements in right corner of ibox with full screen option

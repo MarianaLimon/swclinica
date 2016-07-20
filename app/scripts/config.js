@@ -22,7 +22,7 @@ function config($stateProvider, $urlRouterProvider) {
         })
 
         .state('index.nuevo', {
-            url: "/interdoc",
+            url: "/nuevopaciente",
             templateUrl: "../views/NuevoPaciente.html",
             data: { pageTitle: 'Nuevo paciente', specialClass: 'landing-page'}
         })
@@ -39,10 +39,16 @@ function config($stateProvider, $urlRouterProvider) {
             data: { pageTitle: 'Registrar Pagos', specialClass: 'landing-page'}
         })
 
-        .state('index.historialclinico', {
-            url: "/historialclinico",
-            templateUrl: "../views/HistorialClinico.html",
+        .state('index.crearhistorialclinico', {
+            url: "/crearhistorialclinico",
+            templateUrl: "../views/CrearHistorialClinico.html",
             data: { pageTitle: 'Historial Clinico', specialClass: 'landing-page'}
+        })
+
+        .state('index.consultarhistorialclinico', {
+            url: "/consultarhistorialclinico",
+            templateUrl: "../views/ConsultarHistorialClinico.html",
+            data: { pageTitle: 'Historial Clínico', specialClass: 'landing-page'}
         })
 
         .state('index.historialpagos', {

@@ -1,0 +1,128 @@
+<br><br>
+<section id="historialpagos">
+    <legend><center><h5>Historial C&iacute;nico</h5></center></legend>
+
+    <form role="form"><br>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control"  placeholder="Nombre(s) seguido de apellido(s)">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Buscar</button>
+      </span>
+            </div>
+        </div>
+        <div class="col-lg-3"></div>
+    </form>
+
+<br><br>
+
+    <div class="row m-t-lg" style="align-content: center">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <div class="tabs-container" ng-app="TabsApp">
+
+                <div class="tabs-left" id="tabla" ng-controller="TabsCtrl">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a data-toggle="tab" href="ConsultarHistorialClinico.html/#tab1"> Datos Generales</a>
+                        </li>
+                        <li class=""><a data-toggle="tab" href="ConsultarHistorialClinico.html/#tab2">Datos Generales</a></li>
+                        <li class=""><a data-toggle="tab" href="ConsultarHistorialClinico.html/#tab3">This is second tab</a></li>
+                        <li class=""><a data-toggle="tab" href="ConsultarHistorialClinico.html/#tab4">This is second tab</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab1" class="tab-pane active">
+                            <div class="panel-body">
+                                <strong>Nombre del Paciente:</strong>  Oscar Iv&aacute;n Diosdado Garc&iacute;a
+                                <br><br>
+                                <p><strong>Edad:</strong> 22 a&#241;os</p>
+                                <p><strong>Sexo:</strong> Masculino</p>
+                                <p><strong>Edo. Civil::</strong> Soltero</p>
+                                <p><strong>Direcci&oacute;n:</strong> Boulevard Coacalco num.392, Villa de las Flores, Coacalco de Berriozabal, Estado de M&eacute;xico</p>
+                                <p><strong>Correo Electr&oacute;nico:</strong> oscarin_auch@hotmail.com</p>
+                                <p><strong>Tel&eacute;fono:</strong> 55-1196-2802</p>
+                                <p><strong>Ocupaci&oacute;n:</strong> Estudiante</p>
+                                <p><strong>Motivo de Consulta:</strong> Dolor en molares</p>
+                                <p><strong>Fecha de Nacimiento:</strong> 12/12/1994</p>
+                                <br>
+                                <p><strong>&#191;Qui&eacute;n proporciono la informaci&oacute;n:</strong> Viridiana Garc&iacute;a, Madre</p>
+                                <br><br>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab-pane">
+                        <div class="panel-body">
+                            <strong>Donec quam felis</strong>
+
+                            <p>Thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects
+                                and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath </p>
+
+                            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite
+                                sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet.</p>
+                        </div>
+                    </div>
+                        <div id="tab3" class="tab-pane">
+                            <div class="panel-body">
+                                <strong>Donec quam felis</strong>
+
+                                <p>Thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects
+                                    and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath </p>
+
+                                <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite
+                                    sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet.</p>
+                            </div>
+                        </div>
+                        <div id="tab4" class="tab-pane">
+                            <div class="panel-body">
+                                <strong>Donec quam felis</strong>
+
+                                <p>Thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects
+                                    and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath </p>
+
+                                <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite
+                                    sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+
+
+
+    <div ng-app="TabsApp">
+        <div id="tabs" ng-controller="TabsCtrl1">
+            <ul>
+                <li ng-repeat="tab in tabs"
+                    ng-class="{active:isActiveTab(tab.url)}"
+                    ng-click="onClickTab(tab)">{{tab.title}}</li>
+            </ul>
+            <div id="mainView">
+                <div ng-include="currentTab"></div>
+            </div>
+        </div>
+        <script type="text/ng-template" id="one.tpl.html">
+            <div id="viewOne">
+                <h1>View One</h1>
+                <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc.</p>
+            </div>
+        </script>
+
+        <script type="text/ng-template" id="two.tpl.html">
+            <div id="viewTwo">
+                <h1>View Two</h1>
+                <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu.</p>
+            </div>
+        </script>
+
+        <script type="text/ng-template" id="three.tpl.html">
+            <div id="viewThree">
+                <h1>View Three</h1>
+                <p>In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu.</p>
+            </div>
+        </script>
+    </div>
+
+</section>
