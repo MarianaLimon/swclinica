@@ -48,7 +48,7 @@ function config($stateProvider, $urlRouterProvider) {
         .state('index.consultarhistorialclinico', {
             url: "/consultarhistorialclinico",
             templateUrl: "../views/ConsultarHistorialClinico.html",
-            data: { pageTitle: 'Historial Clínico', specialClass: 'landing-page'}
+            data: { pageTitle: 'Historial Clinico', specialClass: 'landing-page'}
         })
 
         .state('index.historialpagos', {

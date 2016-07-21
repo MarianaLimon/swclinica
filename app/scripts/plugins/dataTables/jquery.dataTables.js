@@ -11174,7 +11174,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sNext": "Next",
+				"sNext": "Siguiente",
 	
 	
 				/**
@@ -11197,7 +11197,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sPrevious": "Previous"
+				"sPrevious": "Anterior"
 			},
 	
 			/**
@@ -11252,8 +11252,9 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
-	
+			/*"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries" oooooriginaaaal,*/
+
+			"sInfo": "Se muestran _END_ de _TOTAL_ piezas dentales",
 	
 			/**
 			 * Display information string for when the table is empty. Typically the
@@ -11413,7 +11414,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sLengthMenu": "Show _MENU_ entries",
+			"sLengthMenu": "Mosrar _MENU_ piezas",
 	
 	
 			/**
@@ -11493,7 +11494,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sSearch": "Search:",
+			"sSearch": "Buscar:",
 	
 	
 			/**
