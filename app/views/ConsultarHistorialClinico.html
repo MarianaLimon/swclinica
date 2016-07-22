@@ -33,6 +33,7 @@
                     <div class="tab-content">
                         <div id="tab1" class="tab-pane active">
                             <div class="panel-body">
+                                <br>
                                 <strong>Nombre del Paciente:</strong>  Oscar Iv&aacute;n Diosdado Garc&iacute;a
                                 <br><br>
                                 <p><strong>Edad:</strong> 22 a&#241;os</p>
@@ -51,6 +52,7 @@
                         </div>
                         <div id="tab2" class="tab-pane">
                         <div class="panel-body">
+                            <br><br>
                             <p><strong>&#191;Se encuentra bajo al&uacute;n tratamiento m&eacute;dico actualmente?</strong> NO</p>
                             <p><strong>&#191;Padece actualmente alguna enfermedad?</strong> SI <strong>&#191;Cu&aacute;l?</strong> ASMA</p>
                             <p><strong>&#191;Ha estado hospitalizado alguna vez?</strong> NO</p>
@@ -64,6 +66,7 @@
                     </div>
                         <div id="tab3" class="tab-pane">
                             <div class="panel-body">
+                                <br><br>
                                 <p><strong>Madre: </strong> Ninguno</p><br>
                                 <p><strong>Padre: </strong> Ninguno</p><br>
                                 <p><strong>Hermanos: </strong> Ninguno</p><br>
@@ -75,6 +78,7 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-sm-6">
+                                        <br><br>
                                         <p><strong>ALT sanguineas:</strong> NO</p>
                                         <p><strong>Depreciones:</strong> NO</p>
                                         <p><strong>Epilepcia:</strong> NO</p>
@@ -84,6 +88,7 @@
                                         <p><strong>Rubiola:</strong> NO</p>
                                         <p><strong>Escarlatina:</strong> NO</p><br>
                                     </div>
+                                    <br><br>
                                     <div class="col-sm-6">
                                         <p><strong>Enfermedad endocrina:</strong> NO</p>
                                         <p><strong>Enfermedad cardiobascular:</strong> NO</p>
@@ -116,8 +121,7 @@
     <div class="container">
         <legend><h2>Estado de los tejidos</h2></legend>
     </div>
-
-    <br>
+    <!--Tabla del diagnostico de odontograma -->
     <div class="row m-t-lg" style="align-content: center">
         <div class="col-lg-1"></div>
         <div class="col-lg-5">
@@ -396,12 +400,7 @@
     </div>
     <br>
 
-
-
-
-
-
-    <!-- Page-Level Scripts -->
+    <!-- Scripts tabla de diagnostico de odontograma -->
     <script>
         $(document).ready(function() {
             $('.dataTables-example').DataTable({
@@ -434,5 +433,222 @@
 
     </script>
 
+    <!-- Tabla de tratamiento -->
+    <div class="container">
+        <legend><h2>Tratamientos</h2></legend>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <div class="wrapper wrapper-content animated container">
+                    <div class="ibox float-e-margins row">
+                        <div class="ibox-title col-lg-8">
+                            <h5>Tratamientos con Cl&iacute;nica Dental GS</h5>
+                        </div>
+                        <div class="ibox-content col-lg-8">
+                            <table class="footable table table-stripped toggle-arrow-tiny tabs-container" data-page-size="5">
+                                <thead>
+                                <tr>
+                                    <th>Tratamiento</th>
+                                    <th>Fase del Tratamiento</th>
+                                    <th>Fecha</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td>Consulta</td>
+                                    <td>Presupuesto</td>
+                                    <td>Jun 1, 2016</td>
+                                </tr>
+                                <tr>
+                                    <td>Consulta</td>
+                                    <td>Diagnostico</td>
+                                    <td>Jun 1, 2016</td>
+                                </tr>
+                                <tr>
+                                    <td>Consulta</td>
+                                    <td>Toma de rx</td>
+                                    <td>Jun 17, 2016</td>
+                                </tr>
+                                <tr>
+                                    <td>Profilaxis</td>
+                                    <td>Profilaxis</td>
+                                    <td>Jun 22, 2016</td>
+                                <tr>
+                                    <td>Selladores</td>
+                                    <td>Selladores</td>
+                                    <td>Jun 30, 2016</td>
+                                </tr>
+                                <tr>
+                                    <td>Aplicaci&oacute;n de fl&uacute;or</td>
+                                    <td>Aplicaci&oacute;n de fl&uacute;or</td>
+                                    <td>Jun 1, 2016</td>
+                                </tr>
+                                <!--<tr>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>$100.00</td>
+                                    <td>$100.00</td>
+                                    <td>$0.00</td>
+                                    <td>Jun 1, 2016</td>
+                                </tr>
+                                <tr>
+                                    <td>Project
+                                        <small>This is example of project</small>
+                                    </td>
+                                    <td>Patrick Smith</td>
+                                    <td>0800 051213</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><span class="pie">0.52/1.561</span></td>
+                                    <td>20%</td>
+                                    <td>Jul 14, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Alpha project</td>
+                                    <td>Alice Jackson</td>
+                                    <td>0500 780909</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><span class="pie">6,9</span></td>
+                                    <td>40%</td>
+                                    <td>Jul 16, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Betha project</td>
+                                    <td>John Smith</td>
+                                    <td>0800 1111</td>
+                                    <td>Erat Volutpat</td>
+                                    <td><span class="pie">3,1</span></td>
+                                    <td>75%</td>
+                                    <td>Jul 18, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>(016977) 0648</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><span class="pie">4,9</span></td>
+                                    <td>18%</td>
+                                    <td>Jul 22, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Alpha project</td>
+                                    <td>Alice Jackson</td>
+                                    <td>0500 780909</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><span class="pie">6,9</span></td>
+                                    <td>40%</td>
+                                    <td>Jul 16, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Project
+                                        <small>This is example of project</small>
+                                    </td>
+                                    <td>Patrick Smith</td>
+                                    <td>0800 051213</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><span class="pie">0.52/1.561</span></td>
+                                    <td>20%</td>
+                                    <td>Jul 14, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>(016977) 0648</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><span class="pie">4,9</span></td>
+                                    <td>18%</td>
+                                    <td>Jul 22, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>-->
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <td colspan="5">
+                                        <ul class="pagination pull-right"></ul>
+                                    </td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+
+
+        <button class="btn btn-success btn-sm demo1">Run example</button>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.demo1').click(function(){
+                swal({
+                    title: "Welcome in Alerts",
+                    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                });
+            });
+
+            $('.demo2').click(function(){
+                swal({
+                    title: "Good job!",
+                    text: "You clicked the button!",
+                    type: "success"
+                });
+            });
+
+            $('.demo3').click(function () {
+                swal({
+                    title: "Are you sure?",
+                    text: "You will not be able to recover this imaginary file!",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Yes, delete it!",
+                    closeOnConfirm: false
+                }, function () {
+                    swal("Deleted!", "Your imaginary file has been deleted.", "success");
+                });
+            });
+
+            $('.demo4').click(function () {
+                swal({
+                            title: "Are you sure?",
+                            text: "Your will not be able to recover this imaginary file!",
+                            type: "warning",
+                            showCancelButton: true,
+                            confirmButtonColor: "#DD6B55",
+                            confirmButtonText: "Yes, delete it!",
+                            cancelButtonText: "No, cancel plx!",
+                            closeOnConfirm: false,
+                            closeOnCancel: false },
+                        function (isConfirm) {
+                            if (isConfirm) {
+                                swal("Deleted!", "Your imaginary file has been deleted.", "success");
+                            } else {
+                                swal("Cancelled", "Your imaginary file is safe :)", "error");
+                            }
+                        });
+            });
+        });
+
+    </script>
+
+    <br><br><br><br>
 </section>
-<br><br><br><br><br>
+
+<!-- Script Paginación -->
+<script>
+    $(document).ready(function() {
+        $('.footable').footable();
+    });
+</script>

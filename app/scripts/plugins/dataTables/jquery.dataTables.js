@@ -11174,7 +11174,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sNext": "Siguiente",
+				"sNext": ">",
 	
 	
 				/**
@@ -11197,7 +11197,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sPrevious": "Anterior"
+				"sPrevious": "<"
 			},
 	
 			/**
