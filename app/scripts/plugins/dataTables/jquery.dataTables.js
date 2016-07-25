@@ -11254,7 +11254,7 @@
 			 */
 			/*"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries" oooooriginaaaal,*/
 
-			"sInfo": "Se muestran _END_ de _TOTAL_ piezas dentales",
+			"sInfo": "Se muestran _END_ de _TOTAL_",
 	
 			/**
 			 * Display information string for when the table is empty. Typically the
@@ -11414,7 +11414,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sLengthMenu": "Mosrar _MENU_ piezas",
+			"sLengthMenu": "Mosrar _MENU_",
 	
 	
 			/**

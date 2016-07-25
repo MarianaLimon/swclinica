@@ -2,4 +2,651 @@
 <section id="registrarpagos">
     <legend><center><h5>Registrar Pagos</h5></center></legend>
 
+    <form role="form"><br>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control typeahead"  placeholder="Nombre(s) seguido de apellido(s)"
+                       data-provide="typeahead" data-items="4" data-source='[\"Mariana Limon Granados\",
+                       "Oscar Ivan Diosdado Garcia", "Carlos Hernandez Gomez",
+                        "Juan Pablo Escobar Bautista", "Samanta Arias Serrato",
+                        "Rommel Gael Nayara Rubio", "Edgar Ramirez Estrada"]'/>
+      <span class="input-group-btn">
+        <a class="btn btn-default" type="button" data-toggle="collapse" href="RegistrarPagos.html/#collapseExample" aria-expanded="false">Buscar</a>
+      </span>
+            </div>
+        </div>
+        <div class="col-lg-3"></div>
+    </form>
+<br><br><br><br><br><br>
+    <div class="collapse" id="collapseExample">
+        <div class="wrapper wrapper-content animated fadeIn">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-lg-8 container">
+                    <div class="ibox float-e-margins row">
+                        <div class="ibox-title">
+                            <h5>Datos del Paciente <small class="m-l-sm">Informaci&oacute;n general</small></h5>
+                            <div class="ibox-tools"></div>
+                        </div>
+                        <div class="ibox-content">
+                            <h2>
+                                <strong>Nombre del Paciente:</strong>  Oscar Iv&aacute;n Diosdado Garc&iacute;a<br/>
+                            </h2>
+                            <p><strong>Edad:</strong> 22 a&#241;os
+                                <strong>Sexo:</strong> Masculino
+                                <strong>Edo. Civil:</strong> Soltero</p>
+                            <p><strong>Direcci&oacute;n:</strong> Boulevard Coacalco num.392, Villa de las Flores, Coacalco de Berriozabal, Estado de M&eacute;xico</p>
+                            <p><strong>Correo Electr&oacute;nico:</strong> oscarin_auch@hotmail.com</p>
+                            <p><strong>Tel&eacute;fono:</strong> 55-1196-2802
+                                <strong>Ocupaci&oacute;n:</strong> Estudiante</p>
+                            <p><strong>Fecha de Nacimiento:</strong> 12/12/1994</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7" align="center">
+                        <form>
+
+                            <div class="form-group" id="data1">
+                                <div class="input-group date" style="width: 200px">
+                                    <input type="text" class="form-control" value="DD/MM/AAAA">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                </div>
+                            </div>
+
+                            <select id="tratamirnto" name="tratamiento" class="form-control c-select" style="width: 200px">
+                                <option selected>TRATAMIENTO</option>
+                                <option value="consulta">Consulta</option>
+                                <option value="profilaxis">Profilaxis</option>
+                                <option value="selladores">Selladores</option>
+                                <option value="aplicacion_flúor">Aplicaci&oacute;n de fl&uacute;or</option>
+                                <option value="extraccion">Extracci&oacute;n</option>
+                                <option value="extraccion _infantil">Extracci&oacute;n infantil</option>
+                                <option value="curetaje_abierto">Curetaje abierto</option>
+                                <option value="curetaje_cerrado">Curetaje cerrado</option>
+                                <option value="cx3molar">Cx 3er molar</option>
+                                <option value="cxMaxilofacial">Cx Maxilofacial</option>
+                                <option value="apicectomia">Apicectomia</option>
+                                <option value="implante">Implante</option>
+                                <option value="resina">Resina</option>
+                                <option value="incrustacion_metalica">Incrustaci&oacute;n met&aacute;lica</option>
+                                <option value="endodoncia">Endodoncia</option>
+                                <option value="coronaPorcelana">Corona Metal Porcelana</option>
+                                <option value="coronaZirconia">Corona Zirconia</option>
+                                <option value="coronaMetal">Corona Metalica</option>
+                                <option value="puente">Puente</option>
+                                <option value="prtesisRemovible">Pr&oacute;tesis removible</option>
+                                <option value="prostodoncia">Prostodoncia</option>
+                                <option value="exodoncia">Exodoncia</option>
+                                <option value="pulpectomia">Pulpectomia</option>
+                                <option value="corona_infantil">Corona infantil</option>
+                                <option value="terapia_laser">Terapia l&aacute;ser oral</option>
+                                <option value="ortodoncia">Ortodoncia</option>
+                            </select>
+                            <br>
+                            <select id="fase" name="fase" class="form-control c-select" style="width: 200px">
+                                <option selected>FASE</option>
+                                <option value="consulta">Consulta</option>
+                                <option value="profilaxis">Profilaxis</option>
+                                <option value="selladores">Selladores</option>
+                                <option value="aplicacion_flúor">Aplicaci&oacute;n de fl&uacute;or</option>
+                                <option value="extraccion">Extracci&oacute;n</option>
+                                <option value="extraccion _infantil">Extracci&oacute;n infantil</option>
+                                <option value="curetaje_abierto">Curetaje abierto</option>
+                                <option value="curetaje_cerrado">Curetaje cerrado</option>
+                                <option value="cx3molar">Cx 3er molar</option>
+                                <option value="cxMaxilofacial">Cx Maxilofacial</option>
+                                <option value="apicectomia">Apicectomia</option>
+                                <option value="implante">Implante</option>
+                                <option value="resina">Resina</option>
+                                <option value="incrustacion_metalica">Incrustaci&oacute;n met&aacute;lica</option>
+                                <option value="endodoncia">Endodoncia</option>
+                                <option value="coronaPorcelana">Corona Metal Porcelana</option>
+                                <option value="coronaZirconia">Corona Zirconia</option>
+                                <option value="coronaMetal">Corona Metalica</option>
+                                <option value="puente">Puente</option>
+                                <option value="prtesisRemovible">Pr&oacute;tesis removible</option>
+                                <option value="prostodoncia">Prostodoncia</option>
+                                <option value="exodoncia">Exodoncia</option>
+                                <option value="pulpectomia">Pulpectomia</option>
+                                <option value="corona_infantil">Corona infantil</option>
+                                <option value="terapia_laser">Terapia l&aacute;ser oral</option>
+                                <option value="ortodoncia">Ortodoncia</option>
+                            </select>
+                            <br>
+                            <div class="form-group input-group form-control-static" style="width: 200px">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                                <span class="input-group-addon">.00</span>
+                            </div>
+
+                            <br><label>Registrar pago por la siguiente cantidad:</label>
+                            <div class="form-group input-group form-control-static" style="width: 260px">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                                <span class="input-group-addon">.00</span>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div class="col-md-2" align="center">
+                        <a href="" id="guardar alta_guardar" class="btn btn-primary btn-lg" type="reset"> Registrar Pago</a>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+
 </section>
+
+
+<script>
+    $(document).ready(function(){
+
+        var $image = $(".image-crop > img")
+        $($image).cropper({
+            aspectRatio: 1.618,
+            preview: ".img-preview",
+            done: function(data) {
+                // Output the result data for cropping image.
+            }
+        });
+
+        var $inputImage = $("#inputImage");
+        if (window.FileReader) {
+            $inputImage.change(function() {
+                var fileReader = new FileReader(),
+                        files = this.files,
+                        file;
+
+                if (!files.length) {
+                    return;
+                }
+
+                file = files[0];
+
+                if (/^image\/\w+$/.test(file.type)) {
+                    fileReader.readAsDataURL(file);
+                    fileReader.onload = function () {
+                        $inputImage.val("");
+                        $image.cropper("reset", true).cropper("replace", this.result);
+                    };
+                } else {
+                    showMessage("Please choose an image file.");
+                }
+            });
+        } else {
+            $inputImage.addClass("hide");
+        }
+
+        $("#download").click(function() {
+            window.open($image.cropper("getDataURL"));
+        });
+
+        $("#zoomIn").click(function() {
+            $image.cropper("zoom", 0.1);
+        });
+
+        $("#zoomOut").click(function() {
+            $image.cropper("zoom", -0.1);
+        });
+
+        $("#rotateLeft").click(function() {
+            $image.cropper("rotate", 45);
+        });
+
+        $("#rotateRight").click(function() {
+            $image.cropper("rotate", -45);
+        });
+
+        $("#setDrag").click(function() {
+            $image.cropper("setDragMode", "crop");
+        });
+
+        $('#data1 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true,
+            format: "dd/mm/yyyy"
+        });
+
+        $('#data_2 .input-group.date').datepicker({
+            startView: 1,
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true,
+            format: "dd/mm/yyyy"
+        });
+
+        $('#data_3 .input-group.date').datepicker({
+            startView: 2,
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true
+        });
+
+        $('#data_4 .input-group.date').datepicker({
+            minViewMode: 1,
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true,
+            todayHighlight: true
+        });
+
+        $('#data_5 .input-daterange').datepicker({
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true
+        });
+
+        var elem = document.querySelector('.js-switch');
+        var switchery = new Switchery(elem, { color: '#1AB394' });
+
+        var elem_2 = document.querySelector('.js-switch_2');
+        var switchery_2 = new Switchery(elem_2, { color: '#ED5565' });
+
+        var elem_3 = document.querySelector('.js-switch_3');
+        var switchery_3 = new Switchery(elem_3, { color: '#1AB394' });
+
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green'
+        });
+
+        $('.demo1').colorpicker();
+
+        var divStyle = $('.back-change')[0].style;
+        $('#demo_apidemo').colorpicker({
+            color: divStyle.backgroundColor
+        }).on('changeColor', function(ev) {
+            divStyle.backgroundColor = ev.color.toHex();
+        });
+
+        $('.clockpicker').clockpicker();
+
+        $('input[name="daterange"]').daterangepicker();
+
+        $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+
+        $('#reportrange').daterangepicker({
+            format: 'MM/DD/YYYY',
+            startDate: moment().subtract(29, 'days'),
+            endDate: moment(),
+            minDate: '01/01/2012',
+            maxDate: '12/31/2015',
+            dateLimit: { days: 60 },
+            showDropdowns: true,
+            showWeekNumbers: true,
+            timePicker: false,
+            timePickerIncrement: 1,
+            timePicker12Hour: true,
+            ranges: {
+                'Today': [moment(), moment()],
+                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            },
+            opens: 'right',
+            drops: 'down',
+            buttonClasses: ['btn', 'btn-sm'],
+            applyClass: 'btn-primary',
+            cancelClass: 'btn-default',
+            separator: ' to ',
+            locale: {
+                applyLabel: 'Submit',
+                cancelLabel: 'Cancel',
+                fromLabel: 'From',
+                toLabel: 'To',
+                customRangeLabel: 'Custom',
+                daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr','Sa'],
+                monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                firstDay: 1
+            }
+        }, function(start, end, label) {
+            console.log(start.toISOString(), end.toISOString(), label);
+            $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        });
+
+        $(".select2_demo_1").select2();
+        $(".select2_demo_2").select2();
+        $(".select2_demo_3").select2({
+            placeholder: "Select a state",
+            allowClear: true
+        });
+
+
+    });
+    var config = {
+        '.chosen-select'           : {},
+        '.chosen-select-deselect'  : {allow_single_deselect:true},
+        '.chosen-select-no-single' : {disable_search_threshold:10},
+        '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+        '.chosen-select-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+        $(selector).chosen(config[selector]);
+    }
+
+    $("#ionrange_1").ionRangeSlider({
+        min: 0,
+        max: 5000,
+        type: 'double',
+        prefix: "$",
+        maxPostfix: "+",
+        prettify: false,
+        hasGrid: true
+    });
+
+    $("#ionrange_2").ionRangeSlider({
+        min: 0,
+        max: 10,
+        type: 'single',
+        step: 0.1,
+        postfix: " carats",
+        prettify: false,
+        hasGrid: true
+    });
+
+    $("#ionrange_3").ionRangeSlider({
+        min: -50,
+        max: 50,
+        from: 0,
+        postfix: "°",
+        prettify: false,
+        hasGrid: true
+    });
+
+    $("#ionrange_4").ionRangeSlider({
+        values: [
+            "January", "February", "March",
+            "April", "May", "June",
+            "July", "August", "September",
+            "October", "November", "December"
+        ],
+        type: 'single',
+        hasGrid: true
+    });
+
+    $("#ionrange_5").ionRangeSlider({
+        min: 10000,
+        max: 100000,
+        step: 100,
+        postfix: " km",
+        from: 55000,
+        hideMinMax: true,
+        hideFromTo: false
+    });
+
+    $(".dial").knob();
+
+    $("#basic_slider").noUiSlider({
+        start: 40,
+        behaviour: 'tap',
+        connect: 'upper',
+        range: {
+            'min':  20,
+            'max':  80
+        }
+    });
+
+    $("#range_slider").noUiSlider({
+        start: [ 40, 60 ],
+        behaviour: 'drag',
+        connect: true,
+        range: {
+            'min':  20,
+            'max':  80
+        }
+    });
+
+    $("#drag-fixed").noUiSlider({
+        start: [ 40, 60 ],
+        behaviour: 'drag-fixed',
+        connect: true,
+        range: {
+            'min':  20,
+            'max':  80
+        }
+    });
+
+</script>
+
+<!--
+
+
+('Consulta', 1, 'Presupuesto'),
+('Consulta', 2, 'Diagn&oacute;stico'),
+('Consulta', 3, 'Toma de rx'),
+('Profilaxis', 1, 'Profilaxis'),
+('Selladores', 1, 'Selladores'),
+('Aplicaci&oacute;n de flúor', 1, 'Aplicaci&oacute;n de flúor'),
+('Extracci&oacute;n', 1, 'Extracci&oacute;n'),
+('Extracci&oacute;n', 2, 'Revisi&oacute;n,retiro de puntos'),
+('Extracci&oacute;n', 3, 'Revisi&oacute;n'),
+('Extracci&oacute;n', 4, 'Toma de rx'),
+('Extracci&oacute;n infantil', 1, 'Extracci&oacute;n'),
+('Extracci&oacute;n infantil', 2, 'Revisi&oacute;n, retiro de puntos'),
+('Extracci&oacute;n infantil', 3, 'Revisi&oacute;n'),
+('Extracci&oacute;n infantil', 4, 'Toma de rx'),
+('Curetaje abierto', 1, 'Revisi&oacute;n'),
+('Curetaje abierto', 2, 'Diagn&oacute;stico RD'),
+('Curetaje abierto', 3, 'Curetaje'),
+('Curetaje abierto', 4, 'Revisi&oacute;n'),
+('Curetaje cerrado', 1, 'Diagn&oacute;stico curetaje'),
+('Curetaje cerrado', 2, 'Diagn&oacute;stico curetaje'),
+('Cx 3er molar', 1, 'Extracci&oacute;n'),
+('Cx 3er molar', 2, 'Retiro de puntos'),
+('Cx 3er molar', 3, 'Revisi&oacute;n'),
+('Cx 3er molar', 4, 'Toma de rx'),
+('Cx Maxilofacial', 1, 'Cx 3er molar'),
+('Cx Maxilofacial', 2, 'Cx supernumerarios'),
+('Cx Maxilofacial', 3, 'Frenilectomia'),
+('Cx Maxilofacial', 4, 'Biopsia'),
+('Cx Maxilofacial', 5, 'Toma de rx'),
+('Apicectomia', 1, 'Apicectomia'),
+('Apicectomia', 2, 'Retiro de puntos'),
+('Apicectomia', 3, 'Monitoreo RD'),
+('Implante', 1, 'Colocaci&oacute;n de implante. Colocar pr&oacute;tesis provisional'),
+('Implante', 2, 'Retiro de puntos, monitoreo radiogr&aacute;fico'),
+('Implante', 3, 'Monitoreo y colocaci&oacute;n de conformador'),
+('Implante', 4, 'Colocaci&oacute;n de corona'),
+('Implante', 5, 'Revisi&oacute;n'),
+('Implante', 6, 'Toma de rx'),
+('Resina', 1, 'Resina'),
+('Resina', 2, 'Curaci&oacute;n'),
+('Resina', 2, 'Obturaci&oacute;n y ajuste oclusal'),
+('Resina', 3, 'Ajuste oclusal'),
+('Resina', 4, 'Infantil'),
+('Incrustaci&oacute;n met&aacute;lica', 1, 'Preparaci&oacute;n y toma de impresi&oacute;n'),
+('Incrustaci&oacute;n met&aacute;lica', 2, 'Valoraci&oacute;n (reconstrucci&oacute;n base cabitaria, endodoncia)'),
+('Incrustaci&oacute;n met&aacute;lica', 3, 'Cementaci&oacute;n ajuste oclusal'),
+('Incrustaci&oacute;n met&aacute;lica', 4, 'Ajuste oclusal'),
+('Incrustaci&oacute;n estética', 1, 'Preparaci&oacute;n y toma de impresi&oacute;n'),
+('Incrustaci&oacute;n estética', 2, 'Valoraci&oacute;n (reconstrucci&oacute;n base cabitaria, endodoncia)'),
+('Incrustaci&oacute;n estética', 3, 'Cementaci&oacute;n ajuste oclusal'),
+('Incrustaci&oacute;n estética', 4, 'Ajuste oclusal'),
+('Endodoncia', 1, 'Acceso'),
+('Endodoncia', 2, 'Despulpar'),
+('Endodoncia', 3, 'Reconstrucci&oacute;n'),
+('Endodoncia', 4, 'Obturar'),
+('Endodoncia', 5, 'Toma de Rx'),
+('Corona Metal Porcelana', 1, 'Toma de impresi&oacute;n'),
+('Corona Metal Porcelana', 2, 'Preparaci&oacute;n, toma de impresi&oacute;n, ajuste y colocaci&oacute;n de provisional'),
+('Corona Metal Porcelana', 3, 'Prueba de metal'),
+('Corona Metal Porcelana', 4, 'Prueba de porcelana y ajuste oclusal'),
+('Corona Metal Porcelana', 5, 'Cementado'),
+('Corona Zirconia', 1, 'Toma de impresi&oacute;n'),
+('Corona Zirconia', 2, 'Preparaci&oacute;n, toma de impresi&oacute;n, ajuste y colocaci&oacute;n de provisional'),
+('Corona Zirconia', 3, 'Prueba de núcleo'),
+('Corona Zirconia', 4, 'Ajuste o cementado'),
+('Corona Zirconia', 5, 'Ajuste oclusal'),
+('Corona Met&aacute;lica', 1, 'Toma de impresi&oacute;n'),
+('Corona Met&aacute;lica', 2, 'Preparaci&oacute;n, toma de impresi&oacute;n, ajuste y colocaci&oacute;n de provisional'),
+('Corona Met&aacute;lica', 3, 'Cementado y ajuste oclusal'),
+('Corona Met&aacute;lica', 4, 'Ajuste oclusal'),
+('Puente', 1, 'Toma de impresi&oacute;n, realizar provisional'),
+('Puente', 2, 'Preparaci&oacute;n, reconstrucci&oacute;n, toma de impresi&oacute;n, colocaci&oacute;n de provisional'),
+('Puente', 3, 'Prueba de metal, cementado de provisional'),
+('Puente', 4, 'Prueba de porcelana, colocaci&oacute;n de provisional'),
+('Puente', 5, 'Cementado, ajuste oclusal'),
+('Pr&oacute;tesis removible', 1, 'Toma de impresi&oacute;n'),
+('Pr&oacute;tesis removible', 2, 'Prueba de base, colocaci&oacute;n de provisional'),
+('Pr&oacute;tesis removible', 3, 'Prueba de rodillos'),
+('Pr&oacute;tesis removible', 4, 'Prueba de dientes'),
+('Pr&oacute;tesis removible', 5, 'entrega de placa'),
+('Corona Metal Porcelana', 5, 'Cementado'),
+('Corona Zirconia', 1, 'Toma de impresi&oacute;n'),
+('Corona Zirconia', 2, 'Preparaci&oacute;n, toma de impresi&oacute;n, ajuste y colocaci&oacute;n de provisional'),
+('Corona Zirconia', 3, 'Prueba de núcleo'),
+('Corona Zirconia', 4, 'Ajuste o cementado'),
+('Corona Zirconia', 5, 'Ajuste oclusal'),
+('Corona Met&aacute;lica', 1, 'Toma de impresi&oacute;n'),
+('Corona Met&aacute;lica', 2, 'Preparaci&oacute;n, toma de impresi&oacute;n, ajuste y colocaci&oacute;n de provisional'),
+('Corona Met&aacute;lica', 3, 'Cementado y ajuste oclusal'),
+('Corona Met&aacute;lica', 4, 'Ajuste oclusal'),
+('Puente', 1, 'Toma de impresi&oacute;n, realizar provisional'),
+('Puente', 2, 'Preparaci&oacute;n, reconstrucci&oacute;n, toma de impresi&oacute;n, colocaci&oacute;n de provisional'),
+('Puente', 3, 'Prueba de metal, cementado de provisional'),
+('Puente', 4, 'Prueba de porcelana, colocaci&oacute;n de provisional'),
+('Puente', 5, 'Cementado, ajuste oclusal'),
+('Pr&oacute;tesis removible', 1, 'Toma de impresi&oacute;n'),
+('Pr&oacute;tesis removible', 2, 'Prueba de base, colocaci&oacute;n de provisional'),
+('Pr&oacute;tesis removible', 3, 'Prueba de rodillos'),
+('Pr&oacute;tesis removible', 4, 'Prueba de dientes'),
+('Pr&oacute;tesis removible', 5, 'Entrega de placa'),
+('Corona Metal Porcelana', 5, 'Cementado'),
+('Corona Zirconia', 1, 'Toma de impresi&oacute;n'),
+('Corona Zirconia', 2, 'Preparaci&oacute;n, toma de impresi&oacute;n, ajuste y colocaci&oacute;n de provisional'),
+('Corona Zirconia', 3, 'Prueba de núcleo'),
+('Corona Zirconia', 4, 'Ajuste o cementado'),
+('Corona Zirconia', 5, 'Ajuste oclusal'),
+('Corona Met&aacute;lica', 1, 'Toma de impresi&oacute;n'),
+('Corona Met&aacute;lica', 2, 'Preparaci&oacute;n, toma de impresi&oacute;n, ajuste y colocaci&oacute;n de provisional'),
+('Corona Met&aacute;lica', 3, 'Cementado y ajuste oclusal'),
+('Corona Met&aacute;lica', 4, 'Ajuste oclusal'),
+('Puente', 1, 'Toma de impresi&oacute;n, realizar provisional'),
+('Puente', 2, 'Preparaci&oacute;n, reconstrucci&oacute;n, toma de impresi&oacute;n, colocaci&oacute;n de provisional'),
+('Puente', 3, 'Prueba de metal, cementado de provisional'),
+('Puente', 4, 'Prueba de porcelana, colocaci&oacute;n de provisional'),
+('Puente', 5, 'Cementado, ajuste oclusal'),
+('Pr&oacute;tesis removible', 1, 'Toma de impresi&oacute;n'),
+('Pr&oacute;tesis removible', 2, 'Prueba de base, colocaci&oacute;n de provisional'),
+('Pr&oacute;tesis removible', 3, 'Prueba de rodillos'),
+('Pr&oacute;tesis removible', 3, 'Prueba de dientes'),
+('Pr&oacute;tesis removible', 4, 'Entrega de placa'),
+('Pr&oacute;tesis removible', 6, 'Ajustes de pr&oacute;tesis'),
+('Prostodoncia', 1, 'Toma de impresi&oacute;n para cucharilla'),
+('Prostodoncia', 2, 'Toma de impresi&oacute;n para placa base, colocar provisional'),
+('Prostodoncia', 3, 'Prueba placa base'),
+('Prostodoncia', 4, 'Prueba de rodillos'),
+('Prostodoncia', 5, 'Prueba de dientes'),
+('Prostodoncia', 6, 'Entrega y ajuste de pr&oacute;tesis'),
+('Prostodoncia', 7, 'Ajustes de pr&oacute;tesis'),
+('Exodoncia', 1, 'Exodoncia'),
+('Exodoncia', 2, 'Revisi&oacute;n'),
+('Exodoncia', 3, 'Toma de Rx'),
+('Pulpectomia', 1, 'Pulpectomia'),
+('Pulpectomia', 2, 'Revisi&oacute;n'),
+('Pulpectomia', 3, 'Obturar o colocar corona'),
+('Pulpectomia', 4, 'Pulpotomia'),
+('Pulpectomia', 5, 'Revisi&oacute;n'),
+('Pulpectomia', 6, 'Obturar'),
+('Pulpectomia', 7, 'Colocar corona o obturar'),
+('Corona infantil', 1, 'Toma de impresi&oacute;n'),
+('Corona infantil', 2, 'Retiro de caries, cementado de corona, ajuste'),
+('Pr&oacute;tesis removible', 6, 'Ajustes de pr&oacute;tesis'),
+('Prostodoncia', 1, 'Toma de impresi&oacute;n para cucharilla'),
+('Prostodoncia', 2, 'Toma de impresi&oacute;n para placa base, colocar provisional'),
+('Prostodoncia', 3, 'Prueba placa base'),
+('Prostodoncia', 4, 'Prueba de rodillos'),
+('Prostodoncia', 5, 'Prueba de dientes'),
+('Prostodoncia', 6, 'Entrega y ajuste de pr&oacute;tesis'),
+('Prostodoncia', 7, 'Ajustes de pr&oacute;tesis'),
+('Exodoncia', 1, 'Exodoncia'),
+('Exodoncia', 2, 'Revisi&oacute;n'),
+('Exodoncia', 3, 'Toma de Rx'),
+('Pulpectomia', 1, 'Pulpectomia'),
+('Pulpectomia', 2, 'Revisi&oacute;n'),
+('Pulpectomia', 3, 'Obturar o colocar corona'),
+('Pulpectomia', 4, 'Pulpotomia'),
+('Pulpectomia', 5, 'Revisi&oacute;n'),
+('Pulpectomia', 6, 'Obturar'),
+('Pulpectomia', 7, 'Colocar corona o obturar'),
+('Corona infantil', 1, 'Toma de impresi&oacute;n'),
+('Corona infantil', 2, 'Retiro de caries, cementado de corona, ajuste'),
+('Terapia l&aacute;ser oral', 1, 'Terapia amelogénesis'),
+('Terapia l&aacute;ser oral', 2, 'Terapia obsesos dentales'),
+('Terapia l&aacute;ser oral', 3, 'Terapia para alveolitis'),
+('Terapia l&aacute;ser oral', 4, 'Blanqueamiento l&aacute;ser'),
+('Terapia l&aacute;ser oral', 5, 'Terapia condilar  y ATM'),
+('Terapia l&aacute;ser oral', 6, 'Terapia para lesiones bucales'),
+('Terapia l&aacute;ser oral', 7, 'Terapia para gingivitis'),
+('Terapia l&aacute;ser oral', 8, 'Terapia para periodontitis'),
+('Terapia l&aacute;ser oral', 9, 'Terapia regenerativa'),
+('Terapia l&aacute;ser oral', 10, 'Terapia analgésica'),
+('Terapia l&aacute;ser oral', 11, 'Terapia para hematomas'),
+('Terapia l&aacute;ser oral', 12, 'Terapia par&aacute;lisis emifacial'),
+('Terapia l&aacute;ser oral', 13, 'Terapia para sensibilidad dental'),
+('Terapia l&aacute;ser oral', 14, 'Terapia neuralgia del trigémino'),
+('Terapia l&aacute;ser oral', 15, 'Terapias posoperatoria cx'),
+('Terapia l&aacute;ser oral', 16, 'Terapia para pulpitis reversible'),
+('Terapia l&aacute;ser oral', 17, 'Terapia para dermatitis herpetiforme'),
+('Terapia l&aacute;ser estético cut&aacute;nea', 1, 'Terapia para acné'),
+('Terapia l&aacute;ser estético cut&aacute;nea', 2, 'Terapia manchas solares'),
+('Terapia l&aacute;ser estético cut&aacute;nea', 3, 'Terapia cicatriz queloide'),
+('Terapia l&aacute;ser estético cut&aacute;nea', 4, 'Terapia para comedones'),
+('Terapia l&aacute;ser estético cut&aacute;nea', 5, 'Terapia para cuperosis'),
+('Terapia l&aacute;ser estético cut&aacute;nea', 6, 'Terapia de cutis graso'),
+('Terapia l&aacute;ser estético cut&aacute;nea', 7, 'Terapia cutis reseco'),
+('Terapia l&aacute;ser estético cut&aacute;nea', 8, 'Terapia para eccema'),
+('Terapia médica', 1, 'Acroparestesia'),
+('Terapia médica', 2, 'Terapia para acufenos'),
+('Ortodoncia', 1, 'Consulta, solicitud de estudios'),
+('Ortodoncia', 2, 'Colocaci&oacute;n de brackets superiores'),
+('Ortodoncia', 3, 'Colocaci&oacute;n de brackets inferiores'),
+('Ortodoncia', 4, 'Recolocaci&oacute;n de bracket'),
+('Ortodoncia', 5, 'Cambio de m&oacute;dulos sup'),
+('Ortodoncia', 6, 'Cambio de m&oacute;dulos inferior'),
+('Ortodoncia', 7, 'Cambio de arco superior'),
+('Ortodoncia', 8, 'Cambio de arco inferior'),
+('Ortodoncia', 9, 'Stripping'),
+('Ortodoncia', 10, 'Fijado de bracket'),
+('Ortodoncia', 11, 'Fijado de bracket con costo'),
+('Ortodoncia', 12, 'Cambio de resorte'),
+('Ortodoncia', 13, 'Colocaci&oacute;n de cadena'),
+('Ortodoncia', 14, 'Colocaci&oacute;n de bandas'),
+('Ortodoncia', 15, 'Colocaci&oacute;n de tubo'),
+('Ortodoncia', 16, 'Toma de impresi&oacute;n para retenedores'),
+('Ortodoncia', 17, 'Entrega de retenedores'),
+('Ortodoncia', 18, 'Revision por molestia'),
+('Ortodoncia', 19, 'Entorchado de arcada superior'),
+('Ortodoncia', 20, 'Entorchado de arcada inferior'),
+('Ortodoncia', 21, 'Cadena Elastomerica sup e inf'),
+('Ortodoncia', 22, 'Colocaci&oacute;n de cadena tipo abierta en arcada inferior'),
+('Ortodoncia', 23, 'Colocaci&oacute;n de cadena tipo abierta en arcada Superior'),
+('Ortodoncia', 24, 'Aparato de ortopedia'),
+('Ortodoncia', 25, 'Toma de impresi&oacute;n'),
+('Ortodoncia', 26, 'Ajuste de aparato'),
+('Ortodoncia', 27, 'Activaci&oacute;n'),
+('Ortodoncia', 28, 'Trampa lingual'),
+('Ortodoncia', 29, 'Mantenedor de espacio'),
+('Ortodoncia', 30, 'Tornillo de expansi&oacute;n'),
+('Ortodoncia', 31, 'Hyrax'),
+('Ortodoncia', 32, 'Pistas planas'),
+('Ortodoncia', 33, 'Guarda oclusal');-->
