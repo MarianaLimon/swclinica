@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Proyecto de residencias Profecionales",
   "dependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "moment": "^2.14.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
