@@ -226,3 +226,7 @@ angular.module('TabsApp', [])
             return tabUrl == $scope.currentTab;
         }
     }]);
+
+angular.module('myApp', ['mwl.calendar', 'ui.bootstrap']);
+
+angular.module('myApp', [require('angular-bootstrap-calendar'), require('angular-ui-bootstrap')]);

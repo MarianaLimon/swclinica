@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Proyecto de residencias Profecionales",
   "dependencies": {
+    "angular": "^1.5.8",
+    "angular-bootstrap-calendar": "^0.21.5",
+    "angular-ui-bootstrap": "^2.0.0",
+    "bootstrap": "^3.3.7",
     "grunt": "^0.4.5",
     "moment": "^2.14.1"
   },
