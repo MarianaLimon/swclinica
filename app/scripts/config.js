@@ -74,6 +74,18 @@ function config($stateProvider, $urlRouterProvider) {
             templateUrl: "../views/historialPago.html",
             data: { pageTitle: 'historialPago', specialClass: 'landing-page'}
         })
+
+        .state('index.usuarios', {
+            url: "/usuarios",
+            templateUrl: "../views/Usuarios.html",
+            data: { pageTitle: 'Usuarios', specialClass: 'landing-page'}
+        })
+
+        .state('index.precios', {
+            url: "/precios",
+            templateUrl: "../views/Precios.html",
+            data: { pageTitle: 'Precios', specialClass: 'landing-page'}
+        })
 }
 angular
     .module('inspinia')
